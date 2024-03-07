@@ -16,6 +16,7 @@
    color: #808000;
    text-align: center; 
    font-size: 25px;
+   margin-top: 0px;
 }
 #page_heading{
     color:#001F3F;
@@ -31,7 +32,7 @@
     color:#001F3F;
     text-align: center;
     font-size: 110px; 
-    margin: 10px;
+    margin: 0px;
 }
 button{
     background-color: #001F3F;
