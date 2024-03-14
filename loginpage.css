@@ -1,0 +1,62 @@
+head,#HomepageContainer{
+    color: #001F3F
+}
+
+head, #SignInContainer
+{
+   text-align:center;
+   padding-top: 20px; 
+   color: #001F3F;
+}
+
+ head,#EmailContainer {
+
+    border-width:200px;
+    border-color:#004B2B;
+    text-align: center;
+    padding-top: 20px; 
+    border-radius: 15px;
+
+}
+
+head, #PasswordContainer{
+    border-width:200px;
+    text-align: center;
+    padding-top: 10px; 
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-color:#004B2B;
+
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 20px;
+}
+
+
+button {
+    width: 170px;
+    height: 25px;
+    font-size: 15px;
+    color:#ffffff;
+    background-color:#001F3F;
+    border-radius: 10px;
+
+ }
+
+ .vertical-center {
+    margin: 0;
+    position: absolute;
+    left: 42%;
+    top:25%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+h1 {
+    color: #007bff;
+}
