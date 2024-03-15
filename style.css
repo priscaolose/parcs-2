@@ -20,13 +20,19 @@
 }
 #page_heading{
     color:#001F3F;
-    text-align: center;
     font-size: 64px;
+    position: relative/absolute; 
+    text-align: center;
+
+
 }
 #small_heading{
     color:#001F3F;
-    text-align: center;
     font-size: 34px;
+    top: 0px;
+    right: 0px;
+    width: 100px;
+    text-align: right;
 }
 #title{
     color:#001F3F;
@@ -45,6 +51,10 @@ button{
     text-decoration: none; 
     cursor: pointer;
 }
+button:hover {
+    opacity: 0.8;
+  }
+
 #list-map_button{
     background-color: #FFFFFF;
     color: #001F3F;
@@ -63,7 +73,9 @@ button{
     padding: 15px 5px; 
     border: 5px solid #4E901E; 
     border-radius: 5px; 
-    font-size: 16px;
+    font-size: 20px;
+    border-radius: 10px; 
+    margin: 10px;
     width: 600px; 
 }
 .input_field::placeholder {
@@ -81,7 +93,7 @@ button{
 }
 /* Style the placeholder text */
 .input_field::placeholder {
-    color: #ccc; 
+    color: green; 
     text-align: center;
 }
 
@@ -89,3 +101,53 @@ button{
     display: block; 
     margin: 0 auto; 
 }
+
+body{
+    overflow-x:hidden;
+  }
+  
+  #hamburger{
+    position:fixed;
+    right: 10px; /* Adjust the right position as needed */
+    top:0px;
+    width:50px;
+    height:40px;
+    display:flex; /* Will display the inner bars like we want it (google css flex for more information)*/
+    flex-direction:column; /* Will display the bars in a column */
+    align-items: center; /* align the bars to the center */
+    justify-content:space-around; /* Displays the bars in a even space vertically*/
+    cursor:pointer; /* When you hover over the Hamburger, your cursor will be a pointer */
+  }
+  
+  #hamburger div{
+    width:30px;
+    height:3px;
+    background:black;
+  }
+  
+  nav a{
+    color:white;
+    text-decoration:none;
+  }
+  
+  nav{
+    position:fixed; /* The position is fixed, and it stays the same when you scroll*/
+    top:0px; /* Set the y-position to the top at 0px */
+    right:0px; /* Set the x-position to the right at 0px */
+    width:20vw; /* Set the width to 20vw (vw = viewpoint Width) you can see vw as a percentage of you current screen. so the value 20vw will use 20% of your available width */
+    transform: translateX(20vw); /* translate (move) the navigation 20px to the right */
+    height:100vh; /* set the height to 100vh (hv = viewpointHeight) so 100% of our current available height */
+    background:black;
+    transition:transform 500ms; /* set a transition animation for the transform */
+  }
+  
+  #nav.open{
+    transform: translateX(0); /* when you have the open class attached, it will be visible.
+    */
+  }
+  
+  nav ul{
+    margin:10px;
+    list-style-type:none;
+    padding:0;
+  }
