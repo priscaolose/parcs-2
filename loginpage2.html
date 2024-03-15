@@ -49,13 +49,13 @@
     <center>
 
     <div class = "input_field">
-      <input type ="text" placeholder="Email" name = "uname" required/>
+      <input type ="text" placeholder="Email" name = "uname" maxlength="255" required =""/>
         <i class="fa-solid fa-user"></i>
     </div>
     
 
     <div class = "input_field">
-        <input type="password" placeholder="Password" name = "upassword" required/>
+        <input type="password" placeholder="Password" name = "upassword" maxlength="255" required=""/>
         <i class="fa-solid fa-lock"></i>
     </div>
        
@@ -67,16 +67,21 @@
 
   </div>
   <input type="checkbox" id="check">
-  <span>Remember me</span>
+<span style='color: #001F3F;'>Remember me</span>
+
+
  <!--<a href="passwordreset.html">  Forgot Password</a> -->
 
 <p>
+  <!-- <font color= "#001F3F">  Do not have an account? </font> --> 
+  <span style='color: #001F3F'>
     Do not have an account?
     <a href = "RegisterPage.html"> Create one</a>
+</span>
+   
 </p>
 
 </center>
 
 </body>
-
 </html>
