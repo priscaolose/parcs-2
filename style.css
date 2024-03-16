@@ -76,7 +76,6 @@ button:hover {
 
 
 .input_field{
-
     padding: 15px 5px; 
     border: 5px solid #4E901E; 
     border-radius: 5px; 
@@ -104,7 +103,7 @@ button:hover {
     width: 600px; 
 }
 /* Style the placeholder text */
-.input_field::placeholder {
+.zipcode_search::placeholder {
     color: green; 
     text-align: center;
 }
@@ -168,4 +167,19 @@ body{
 .required:after {
   content:" *";
   color: red;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input_field {
+  padding-left: 30px; /* Adjust this value to fit your icon */
+}
+
+.fa-solid.fa-user {
+  position: absolute;
+  left: 5px; /* Adjust this value to position the icon within the input field */
+  top: 50%;
+  transform: translateY(-50%);
 }
