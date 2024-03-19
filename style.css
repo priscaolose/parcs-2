@@ -1,3 +1,10 @@
+/* Resetting default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 *{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -82,7 +89,7 @@ button:hover {
     font-size: 20px;
     border-radius: 10px; 
     margin: 10px;
-    width: 600px; 
+    width: 600px;   
     opacity: 0.8;
 
 }
@@ -92,7 +99,9 @@ button:hover {
     text-align: left;
 }
 
-
+.under_text{
+  padding-top: 10px;
+}
 .zipcode_search{
     /* to use for username 
     do the following: <input type="text" class="zipcode_search" placeholder="ZIP code"> */
@@ -116,53 +125,129 @@ button:hover {
 body{
     overflow-x:hidden;
   }
-  
-  #hamburger{
-    position:fixed;
-    right: 10px; /* Adjust the right position as needed */
-    top:0px;
-    width:50px;
-    height:40px;
-    display:flex; /* Will display the inner bars like we want it (google css flex for more information)*/
-    flex-direction:column; /* Will display the bars in a column */
-    align-items: center; /* align the bars to the center */
-    justify-content:space-around; /* Displays the bars in a even space vertically*/
-    cursor:pointer; /* When you hover over the Hamburger, your cursor will be a pointer */
-  }
-  
-  #hamburger div{
-    width:30px;
-    height:3px;
-    background:black;
-  }
-  
-  nav a{
-    color:white;
-    text-decoration:none;
-  }
-  
-  nav{
-    position:fixed; /* The position is fixed, and it stays the same when you scroll*/
-    top:0px; /* Set the y-position to the top at 0px */
-    right:0px; /* Set the x-position to the right at 0px */
-    width:20vw; /* Set the width to 20vw (vw = viewpoint Width) you can see vw as a percentage of you current screen. so the value 20vw will use 20% of your available width */
-    transform: translateX(20vw); /* translate (move) the navigation 20px to the right */
-    height:100vh; /* set the height to 100vh (hv = viewpointHeight) so 100% of our current available height */
-    background:black;
-    transition:transform 500ms; /* set a transition animation for the transform */
-  }
-  
-  #nav.open{
-    transform: translateX(0); /* when you have the open class attached, it will be visible.
-    */
-  }
-  
-  nav ul{
-    margin:10px;
-    list-style-type:none;
-    padding:0;
-  }
 
+/* Main content area styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #001F3F ;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
+}
+
+/* Styling for the links inside the navigation */
+.sidenav a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+}
+
+/* Change the color of the links on hover */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-right: 0;
+  padding: 20px;
+  transition: margin-right 0.5s;
+}
+
+
+.hamburger {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 2;
+}
+.bar {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar {
+  background-color: #fff;
+}
+
+/*
+#hamburger {
+  position: fixed;
+  right: 10px; 
+  top: 0px;
+  width: 50px;
+  height: 40px;
+  display: flex; 
+  
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: space-around; 
+  cursor: pointer; 
+  
+}
+*/
+/*
+.hamburger {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#hamburger div {
+  width: 30px;
+  height: 3px;
+  background: black;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+*/
+/*
+nav {
+  position: fixed; 
+  top: 0px; 
+  right: 0px; 
+  width: 20vw; 
+  transform: translateX(20vw); 
+  height: 100vh; 
+  background: black;
+  transition: transform 500ms; 
+}
+*/
+/*
+#nav.open {
+  transform: translateX(0); 
+}
+
+*/
+/*
+nav ul {
+  margin: 10px;
+  list-style-type: none;
+  padding: 0;
+}
+*/
 
 .required:after {
   content:" *";

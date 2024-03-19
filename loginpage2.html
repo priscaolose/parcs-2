@@ -10,44 +10,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="loginpage.js"></script>
+</head>
 
-
+    
+<body>
     <div id = "small_heading">
        Home
     </div>
 
     <!--<button class="openbtn" onclick="openNav()">&#9776;</button>-->
 
-  <div id="hamburger">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
+    <div class="hamburger" onclick="toggleNav()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      
   
-  
-    <nav id="nav">
-        <ul>
-            <li><a href="#">Manage Account</a></li>
-            <li><a href="#">Leaderboard</a></li>
-            <li><a href="#">View Reviews</a></li>
-            <li><a href="#">Logout</a></li>
-        </ul>        
-    </nav>
+      <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="ManageAccount.html">Manage Account</a>
+        <a href="LeaderBoard.html">Leaderboard</a>
+        <a href="ViewReviews.html">View Reviews</a>
+        <a href="#">Logout</a>
+      </div>
+      <br>
 
-       <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
-        
-  
-</head>
-
-    <div id = "page_heading">
-        Sign in to Parcs
-    </div>  
-
-    
-<body>
-    
     <center>
-
+        <div id = "page_heading">
+            Sign in to Parcs
+        </div>  
+    
     <!--
         <div class = "input_field">
       <input type ="text" placeholder="Email" name = "uname" maxlength="255" />
@@ -56,36 +49,40 @@
     </div>
     -->
     
-    <div >
-        <input required type="email" class="input_field" placeholder="Username" name="uname"/>
-        <i class="fa-regular fa-user"></i>
+            <div >
+                <input required type="email" class="input_field" placeholder="Username" name="uname"/>
+                <i class="fa-regular fa-user"></i>
+            </div>
+
+            <div >
+                <input required type="password" class="input_field" placeholder="Password" name="uname"/>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+        <br>
+
+        <div class ="button"> 
+            <a href="ParksViewPage.html" target="_blank">
+                <button type="Login" class = "btn">Log in</button>
+            </a>
+        </div>
+        <div class = "under_text">
+            <input type="checkbox" id="check">
+            <span style='color: #001F3F;'>Remember me</span>    
+          
+        </div>
+        
+        <div class = "under_text">
+        <span style='color: #001F3F'>
+            Do not have an account?
+            <a href = "RegisterPage.html"> Create one</a>
+        </span>
     </div>
-      <div >
-        <input required type="password" class="input_field" placeholder="Password" name="uname"/>
-        <i class="fa-solid fa-lock"></i>
-    </div>
-      
-<br>
-  <div class ="button"> 
-    <a href="ParksViewPage.html" target="_blank">
-        <button type="Login" class = "btn">Log in</button>
-    </a>
-
-  </div>
-  <input type="checkbox" id="check">
-<span style='color: #001F3F;'>Remember me</span>
-
-
- <!--<a href="passwordreset.html">  Forgot Password</a> -->
-
-<p>
-  <!-- <font color= "#001F3F">  Do not have an account? </font> --> 
-  <span style='color: #001F3F'>
-    Do not have an account?
-    <a href = "RegisterPage.html"> Create one</a>
-</span>
-   
-</p>
+    
+        <p>
+        <!-- <font color= "#001F3F">  Do not have an account? </font> --> 
+        
+        
+        </p>
 
 </center>
 
