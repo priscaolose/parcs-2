@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Parks</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFbYjdvYojYJvM2v6oclCufAtwE6yPD78&libraries=places"></script>
+</head>
+<body>
+    <div id="parkImage">
+        <img src="images/parks_photo.png" alt="photo of a park">
+        <div>
+            <h1>Enter your ZIP code to find parks near you</h1>
+            <div class="search_container">
+                <input id="zipCodeInput" type="text" class="zipcode_search" placeholder="Zip Code">
+                <button id="searchButton" class="search_button" onclick="searchParks()">Search</button>
+            </div>            
+        </div>
+    </div>
+    
+    <div id="map"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
