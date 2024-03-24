@@ -7,26 +7,28 @@
     <title>ParcsLoginPage</title>
     <meta charset="UTF-8">
     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="vxiewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="loginpage.js"></script>
 </head>
 
-    
 <body>
-    <div id = "small_heading">
-       Home
-    </div>
-
     <!--<button class="openbtn" onclick="openNav()">&#9776;</button>-->
+    <div class="header">
+        <div id="small_heading">
+            <a href="Homepage1.html"> Home</a>
+            <!-- how to make this not show a line beneath it when loaded-->
+        </div>
+    
+        <div class="hamburger" onclick="toggleNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+    
 
-    <div class="hamburger" onclick="toggleNav()">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
       
-  
       <div class="sidenav" id="mySidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="ManageAccount.html">Manage Account</a>
@@ -48,7 +50,6 @@
         <label class="required"></label>
     </div>
     -->
-    
             <div >
                 <input required type="email" class="input_field" placeholder="Username" name="uname"/>
                 <i class="fa-regular fa-user"></i>
@@ -56,7 +57,8 @@
 
             <div >
                 <input required type="password" class="input_field" placeholder="Password" name="uname"/>
-                <i class="fa-solid fa-lock"></i>
+               <!--<i class="fa-solid fa-lock"></i> -->          
+                <i class="fa-solid fa-lock toggle_password" onclick="togglePasswordVisibility(this)"></i>
             </div>
         <br>
 
@@ -70,7 +72,7 @@
             <span style='color: #001F3F;'>Remember me</span>    
           
         </div>
-        
+
         <div class = "under_text">
         <span style='color: #001F3F'>
             Do not have an account?
@@ -80,8 +82,7 @@
     
         <p>
         <!-- <font color= "#001F3F">  Do not have an account? </font> --> 
-        
-        
+         
         </p>
 
 </center>

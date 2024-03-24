@@ -27,7 +27,7 @@ function closeNav() {
   document.getElementById("main").style.marginRight= "0";
 }
 
-
+/*
 function bcrypt_encrypt(username, password) {
 	bcrypt.genSalt(10, function(err, salt) {
 		bcrypt.hash(password, salt, function(err, key) {
@@ -36,3 +36,19 @@ function bcrypt_encrypt(username, password) {
 		});
 	});
 }
+
+*/
+function togglePasswordVisibility(icon) {
+  var inputField = icon.previousElementSibling;
+  if (inputField.type === "password") {
+      inputField.type = "text";
+      icon.classList.remove("fa-lock");
+      icon.classList.add("fa-unlock-alt");
+  } 
+  else {
+      inputField.type = "password";
+      icon.classList.remove("fa-unlock-alt");
+      icon.classList.add("fa-lock");
+  }
+}
+
