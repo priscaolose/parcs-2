@@ -1,0 +1,95 @@
+<head>
+    <script src="https://kit.fontawesome.com/a3303f42a6.js" crossorigin="anonymous"></script>
+    
+    <title>ParcsRegisterPage</title>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="loginpage.js"></script>
+</head>
+
+<body>
+    <div id = "small_heading">
+    <a href="Homepage1.html">Home</a>
+    </div>
+
+    <!--<button class="openbtn" onclick="openNav()">&#9776;</button>-->
+
+    <div class="hamburger" onclick="toggleNav()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      
+  
+      <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="ManageAccount.html">Manage Account</a>
+        <a href="LeaderBoard.html">Leaderboard</a>
+        <a href="ViewReviews.html">View Reviews</a>
+        <a href="#">Logout</a>
+      </div>
+      <br>
+
+    <center>
+
+    <div id = "page_heading">
+        Sign up for Parcs
+    </div>  
+
+    <div>
+        <input type ="text"  class = "input_field"  placeholder="First name" name = "uname"/>
+        <i class="fa-regular fa-user"></i>
+        <label class="required"></label>
+    </div>
+      <!--  <label class="required"></label> --> 
+
+      <div >
+        <input type ="text" class = "input_field" placeholder= "Last name" name = "uname"/>
+        <i class="fa-regular fa-user"></i>
+        <label class="required"></label>
+    </div>
+      <!--  <label class="required"></label> --> 
+  
+    
+      <div >
+        <input type="email" class = "input_field" autocapatilize = "off"  autocorrect="off" spellcheck="false" placeholder="Email" name = "uemail"  />
+        <i class="fa-solid fa-envelope"></i>
+        <label class="required"></label>
+
+        <!--  <label class="required"></label> --> 
+    </div>
+
+    <div >
+        <input type="password" class = "input_field"  placeholder="Password" name = "upassword"/>
+        <i class="fa-solid fa-lock toggle_password" onclick="togglePasswordVisibility(this)"></i>
+        <label class="required"></label>
+
+    </div>
+
+    <div>
+        <input type="tel"  class = "input_field" placeholder="Phone Number" name = "uphonenumber" />
+        <i class="fa-solid fa-phone"></i>
+
+    </div>
+       
+    <br>
+  <div class ="button"> 
+    <a href="ParksViewPage.html" target="_blank">
+        <button type="Login" class = "btn">Create Account</button>
+    </a>
+
+  </div>
+
+  <div class = "under_text">
+    Already have an account?
+    <a href = "loginpage2.html"> Sign in</a>
+</div>
+
+
+</center>
+
+</body>
+
+</html>

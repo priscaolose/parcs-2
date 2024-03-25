@@ -1,3 +1,10 @@
+/* Resetting default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 *{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -18,15 +25,28 @@
    font-size: 25px;
    margin-top: 0px;
 }
+#extra_text{
+  color: #808000;
+  text-align: center; 
+  font-size: 25px;
+  margin-top: 0px;
+}
+
 #page_heading{
     color:#001F3F;
-    text-align: center;
     font-size: 64px;
+    position: relative/absolute; 
+    text-align: center;
+
+
 }
 #small_heading{
     color:#001F3F;
-    text-align: center;
     font-size: 34px;
+    top: 0px;
+    right: 0px;
+    width: 100px;
+    text-align: right;
 }
 #title{
     color:#001F3F;
@@ -45,6 +65,21 @@ button{
     text-decoration: none; 
     cursor: pointer;
 }
+button:hover {
+    opacity: 0.8;
+  }
+a:link { 
+    text-decoration: none; 
+} 
+a:visited { 
+    text-decoration: none; 
+} 
+a:hover { 
+    text-decoration: none; 
+} 
+a:active { 
+    text-decoration: none; 
+}
 #list-map_button{
     background-color: #FFFFFF;
     color: #001F3F;
@@ -57,18 +92,26 @@ button{
     cursor: pointer;
 }
 
+
 .input_field{
-    /* to use for username 
-    do the following: <input type="text" class="input_field" placeholder="Username"> */
     padding: 15px 5px; 
     border: 5px solid #4E901E; 
     border-radius: 5px; 
-    font-size: 16px;
-    width: 600px; 
+    font-size: 20px;
+    border-radius: 10px; 
+    margin: 10px;
+    width: 600px;   
+    opacity: 0.8;
+
 }
 .input_field::placeholder {
     color: #ccc; 
+   
     text-align: left;
+}
+
+.under_text{
+  padding-top: 10px;
 }
 .zipcode_search{
     /* to use for username 
@@ -80,8 +123,8 @@ button{
     width: 600px; 
 }
 /* Style the placeholder text */
-.input_field::placeholder {
-    color: #ccc; 
+.zipcode_search::placeholder {
+    color: green; 
     text-align: center;
 }
 
@@ -90,3 +133,149 @@ button{
     margin: 0 auto; 
 }
 
+body{
+    overflow-x:hidden;
+  }
+
+/* Main content area styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #001F3F ;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
+}
+
+/* Styling for the links inside the navigation */
+.sidenav a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+}
+
+/* Change the color of the links on hover */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-right: 0;
+  padding: 20px;
+  transition: margin-right 0.5s;
+}
+
+
+.hamburger {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 2;
+}
+.bar {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar {
+  background-color: #fff;
+}
+
+/*
+#hamburger {
+  position: fixed;
+  right: 10px; 
+  top: 0px;
+  width: 50px;
+  height: 40px;
+  display: flex; 
+  
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: space-around; 
+  cursor: pointer; 
+  
+}
+*/
+/*
+.hamburger {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#hamburger div {
+  width: 30px;
+  height: 3px;
+  background: black;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+*/
+/*
+nav {
+  position: fixed; 
+  top: 0px; 
+  right: 0px; 
+  width: 20vw; 
+  transform: translateX(20vw); 
+  height: 100vh; 
+  background: black;
+  transition: transform 500ms; 
+}
+*/
+/*
+#nav.open {
+  transform: translateX(0); 
+}
+
+*/
+/*
+nav ul {
+  margin: 10px;
+  list-style-type: none;
+  padding: 0;
+}
+*/
+
+.required:after {
+  content:" *";
+  color: red;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input_field {
+  padding-left: 30px; /* Adjust this value to fit your icon */
+}
+
+.fa-solid.fa-user {
+  position: absolute;
+  left: 5px; /* Adjust this value to position the icon within the input field */
+  top: 50%;
+  transform: translateY(-50%);
+}
