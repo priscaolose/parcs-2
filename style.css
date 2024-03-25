@@ -48,6 +48,11 @@
     width: 100px;
     text-align: right;
 }
+#small_heading a {
+  color: #001F3F; /* Set the color to blue */
+  /* Add any other styling you need for the anchor element */
+}
+
 #title{
     color:#001F3F;
     text-align: center;
@@ -112,6 +117,7 @@ a:active {
 
 .under_text{
   padding-top: 10px;
+  color: #001F3F;
 }
 .zipcode_search{
     /* to use for username 
