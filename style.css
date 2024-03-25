@@ -181,11 +181,16 @@ body{
 
 .hamburger {
   position: fixed;
-  top: 20px;
-  right: 20px;
+  top: 0px;
+  right: 10px;
   cursor: pointer;
   z-index: 2;
 }
+
+.hamburger.open {
+  color: #f6eaea;
+}
+
 .bar {
   width: 35px;
   height: 5px;
@@ -197,68 +202,6 @@ body{
 .change .bar {
   background-color: #fff;
 }
-
-/*
-#hamburger {
-  position: fixed;
-  right: 10px; 
-  top: 0px;
-  width: 50px;
-  height: 40px;
-  display: flex; 
-  
-  flex-direction: column; 
-  align-items: center; 
-  justify-content: space-around; 
-  cursor: pointer; 
-  
-}
-*/
-/*
-.hamburger {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  cursor: pointer;
-  z-index: 2;
-}
-
-#hamburger div {
-  width: 30px;
-  height: 3px;
-  background: black;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-*/
-/*
-nav {
-  position: fixed; 
-  top: 0px; 
-  right: 0px; 
-  width: 20vw; 
-  transform: translateX(20vw); 
-  height: 100vh; 
-  background: black;
-  transition: transform 500ms; 
-}
-*/
-/*
-#nav.open {
-  transform: translateX(0); 
-}
-
-*/
-/*
-nav ul {
-  margin: 10px;
-  list-style-type: none;
-  padding: 0;
-}
-*/
 
 .required:after {
   content:" *";
