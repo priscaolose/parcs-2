@@ -1,208 +1,205 @@
-
-/* Global styles */
+/* Resetting default margins and paddings */
 * {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 900; 
-  font-style: normal;
-  color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#unbold {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: normal;
-  font-style: normal;
-  color: black;
+*{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900; 
+    font-style: normal;
+    color:black;
 }
-
-#slogan {
+#unbold{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal; 
+    font-style: normal;
+    color:black;
+}
+#slogan{
+   color: #808000;
+   text-align: center; 
+   font-size: 25px;
+   margin-top: 0px;
+}
+#extra_text{
   color: #808000;
-  text-align: center;
+  text-align: center; 
   font-size: 25px;
   margin-top: 0px;
 }
 
-#extra_text {
-  color: #808000;
-  text-align: center;
-  font-size: 25px;
-  margin-top: 0px;
-}
+#page_heading{
+    color:#001F3F;
+    font-size: 64px;
+    position: relative/absolute; 
+    text-align: center;
 
-#page_heading {
-  color: #001F3F;
-  font-size: 64px;
-  position: relative/absolute;
-  text-align: center;
-}
 
-#small_heading {
-  color: #001F3F;
-  font-size: 34px;
-  top: 0px;
-  right: 0px;
-  width: 100px;
-  text-align: right;
 }
-
-#title {
-  color: #001F3F;
-  text-align: center;
-  font-size: 110px;
-  margin: 0px;
+#small_heading{
+    color:#001F3F;
+    font-size: 34px;
+    top: 0px;
+    right: 0px;
+    width: 100px;
+    text-align: right;
 }
-
-button {
-  background-color: #001F3F;
-  color: #FFFFFF;
-  padding: 10px 80px;
-  border: none;
-  border-radius: 10px;
-  font-size: 32px;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
+#title{
+    color:#001F3F;
+    text-align: center;
+    font-size: 110px; 
+    margin: 0px;
 }
-
-#toggleButton {
-  background-color: #001F3F;
-  color: #FFFFFF;
-  padding: 10px 80px;
-  border: none;
-  border-radius: 10px;
-  font-size: 12px;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
+button{
+    background-color: #001F3F;
+    color: #FFFFFF;
+    padding: 10px 80px; 
+    border: none; 
+    border-radius: 10px; 
+    font-size: 32px;
+    text-align: center;
+    text-decoration: none; 
+    cursor: pointer;
 }
-
 button:hover {
-  opacity: 0.8;
+    opacity: 0.8;
+  }
+a:link { 
+    text-decoration: none; 
+} 
+a:visited { 
+    text-decoration: none; 
+} 
+a:hover { 
+    text-decoration: none; 
+} 
+a:active { 
+    text-decoration: none; 
+}
+#list-map_button{
+    background-color: #FFFFFF;
+    color: #001F3F;
+    padding: 10px 30px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none; 
+    cursor: pointer;
 }
 
-#list-map_button {
-  background-color: #FFFFFF;
-  color: #001F3F;
-  padding: 10px 30px;
-  border: none;
-  border-radius: 5px;
-  font-size: 20px;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-}
 
-.input_field {
-  display: flex;
-  align-items: center; /* Align items vertically */
-  padding: 15px 5px;
-  border: 5px solid #4E901E;
-  border-radius: 10px;
-  font-size: 16px;
-  flex: 1; /* Take remaining space */
-  /*margin-right: 0px; /* Add margin to separate input and button */
-}
+.input_field{
+    padding: 15px 5px; 
+    border: 5px solid #4E901E; 
+    border-radius: 5px; 
+    font-size: 20px;
+    border-radius: 10px; 
+    margin: 10px;
+    width: 600px;   
+    opacity: 0.8;
 
+}
 .input_field::placeholder {
-  color: #ccc;
-  text-align: center;
+    color: #ccc; 
+   
+    text-align: left;
 }
 
-/*.search_container {
-  display: flex;
-  align-items: center; /* Align items vertically */
-  /*padding: 15px 5px;
-  border: 5px solid #4E901E;
-  border-radius: 10px;
-  font-size: 16px;
-  flex: 1; /* Take remaining space */
-  /*margin-right: 0px; /* Add margin to separate input and button */
-
-
-
-
-.search_button img {
-  width: 30px;
-  height: auto;
+.under_text{
+  padding-top: 10px;
 }
-
+.zipcode_search{
+    /* to use for username 
+    do the following: <input type="text" class="zipcode_search" placeholder="ZIP code"> */
+    padding: 15px 5px; 
+    border: 5px solid #4E901E; 
+    border-radius: 5px; 
+    font-size: 16px;
+    width: 600px; 
+}
 /* Style the placeholder text */
 .zipcode_search::placeholder {
-  color: grey;
-  text-align: center;
+    color: green; 
+    text-align: center;
 }
 
 #center_img {
-  display: block;
-  margin: 0 auto;
+    display: block; 
+    margin: 0 auto; 
 }
 
-body {
-  overflow-x: hidden;
-}
+body{
+    overflow-x:hidden;
+  }
 
-#hamburger {
-  position: fixed;
-  right: 10px;
-  /* Adjust the right position as needed */
-  top: 0px;
-  width: 50px;
-  height: 40px;
-  display: flex;
-  /* Will display the inner bars like we want it (google css flex for more information)*/
-  flex-direction: column;
-  /* Will display the bars in a column */
-  align-items: center;
-  /* align the bars to the center */
-  justify-content: space-around;
-  /* Displays the bars in a even space vertically*/
-  cursor: pointer;
-}
-
-#hamburger div {
-  width: 30px;
-  height: 3px;
-  background: black;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-nav {
-  position: fixed;
-  /* The position is fixed, and it stays the same when you scroll*/
-  top: 0px;
-  /* Set the y-position to the top at 0px */
-  right: 0px;
-  /* Set the x-position to the right at 0px */
-  width: 20vw;
-  /* Set the width to 20vw (vw = viewpoint Width) you can see vw as a percentage of you current screen. so the value 20vw will use 20% of your available width */
-  transform: translateX(20vw);
-  /* translate (move) the navigation 20px to the right */
-  height: 100vh;
-  /* set the height to 100vh (hv = viewpointHeight) so 100% of our current available height */
-  background: black;
-  transition: transform 500ms;
-  /* set a transition animation for the transform */
-}
-
-#nav.open {
-  transform: translateX(0);
-  /* when you have the open class attached, it will be visible.
-  */
-}
-
-nav ul {
-  margin: 10px;
-  list-style-type: none;
+/* Main content area styling */
+* {
+  margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #001F3F ;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
+}
+
+/* Styling for the links inside the navigation */
+.sidenav a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+}
+
+/* Change the color of the links on hover */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-right: 0;
+  padding: 20px;
+  transition: margin-right 0.5s;
+}
+
+
+.hamburger {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 2;
+}
+.bar {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar {
+  background-color: #fff;
 }
 
 .required:after {
-  content: " *";
+  content:" *";
   color: red;
 }
 
@@ -211,16 +208,60 @@ nav ul {
 }
 
 .input_field {
-  padding-left: 30px;
-  /* Adjust this value to fit your icon */
+  padding-left: 30px; /* Adjust this value to fit your icon */
 }
 
 .fa-solid.fa-user {
   position: absolute;
-  left: 5px;
-  /* Adjust this value to position the icon within the input field */
+  left: 5px; /* Adjust this value to position the icon within the input field */
   top: 50%;
   transform: translateY(-50%);
+}
+
+.leaderboard-container {
+  
+  max-width: 800px;
+  margin: 0 auto;
+  border: 2px solid #4E901E; 
+  border-radius: 10px;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+
+}
+
+th, td {
+  padding: 8px;
+  border-bottom: 1px solid #4E901E;
+  text-align: left;
+}
+
+th {
+  background-color: #4E901E;
+}
+
+tr:hover {
+  background-color: lightgray;
+}
+
+tr {
+  border-radius: 5px;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+.podium{
+  position: absolute;
+  width: 197px;
+  height: 225px;
+  left: 790px;
+  top: 172px;
 }
 
 /* Park view styles */
@@ -334,4 +375,3 @@ h1 {
 .description-box p {
   font-size: 16px;
 }
-
