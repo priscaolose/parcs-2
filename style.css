@@ -219,6 +219,8 @@ body{
 }
 
 .leaderboard-container {
+  max-width: 800px;
+  margin: 0 auto;
   border: 2px solid #4E901E; 
   border-radius: 10px;
   overflow: auto;
