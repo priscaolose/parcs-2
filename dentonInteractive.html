@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parks in Denton, TX - Interactive View</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="park-display">
+        <h1>Parks in Denton, TX</h1>
+        <!-- Toggle button -->
+        <button id="toggleButton" onclick="toggleView()">Interactive View</button>
+        <!-- Grid container for interactive view -->
+        <div class="grid-container" id="interactiveView">
+            <!-- Park items -->
+            <div class="grid-item">
+                <a target="_blank" href="north_lakes_park.jpg">
+                    <img src="images/North_Lakes_Park.jpeg" alt="North Lakes Park">
+                </a>
+                <div class="desc">North Lakes Park</div>
+            </div>
+            <!-- Add more park items as needed -->
+            <div class="grid-item">
+                <a target="_blank" href="quakertown_park.jpg">
+                    <img src="images/Quakertown_Park.jpeg" alt="Quakertown Park">
+                </a>
+                <div class="desc">Quakertown Park</div>
+            </div>
+            <div class="grid-item">
+                <a target="_blank" href="eureka_park.jpg">
+                    <img src="images/Eureka_Park.jpeg" alt="Eureka Park">
+                </a>
+                <div class="desc">Eureka Park</div>
+            </div>
+            <!-- Add more park items as needed -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

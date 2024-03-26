@@ -1,7 +1,9 @@
+
+/* Global styles */
 * {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 900;
+  font-weight: 900; 
   font-style: normal;
   color: black;
 }
@@ -63,6 +65,18 @@ button {
   cursor: pointer;
 }
 
+#toggleButton {
+  background-color: #001F3F;
+  color: #FFFFFF;
+  padding: 10px 80px;
+  border: none;
+  border-radius: 10px;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 button:hover {
   opacity: 0.8;
 }
@@ -80,27 +94,8 @@ button:hover {
 }
 
 .input_field {
-  padding: 15px 5px;
-  border: 5px solid #4E901E;
-  border-radius: 5px;
-  font-size: 20px;
-  border-radius: 10px;
-  margin: 10px;
-  width: 600px;
-  opacity: 0.8;
-}
-
-.input_field::placeholder {
-  color: #ccc;
-  text-align: left;
-}
-
-.search_container {
   display: flex;
   align-items: center; /* Align items vertically */
-}
-
-.zipcode_search {
   padding: 15px 5px;
   border: 5px solid #4E901E;
   border-radius: 10px;
@@ -109,13 +104,28 @@ button:hover {
   /*margin-right: 0px; /* Add margin to separate input and button */
 }
 
+.input_field::placeholder {
+  color: #ccc;
+  text-align: center;
+}
+
+/*.search_container {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  /*padding: 15px 5px;
+  border: 5px solid #4E901E;
+  border-radius: 10px;
+  font-size: 16px;
+  flex: 1; /* Take remaining space */
+  /*margin-right: 0px; /* Add margin to separate input and button */
+
+
 
 
 .search_button img {
   width: 30px;
   height: auto;
 }
-
 
 /* Style the placeholder text */
 .zipcode_search::placeholder {
@@ -213,63 +223,11 @@ nav ul {
   transform: translateY(-50%);
 }
 
-#parkImage {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-  overflow: hidden;
-  text-align: center; /* Center-align the text */
-  padding: 20px; /* Add padding for spacing */
-}
-
-#parkImage img {
-  max-width: 50%; /* Make the image smaller */
-  border-radius: 20px; /* Apply rounded borders */
-  margin-bottom: 10px; /* Add margin below the image */
-}
-
-#parkImage h1 {
-  margin-bottom: 10px;
-  color: #001F3F;
-  font-size: 34px;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-}
-
-#parkImage input[type="text"],
-#parkImage button {
-  padding: 10px 20px;
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-#parkImage button {
-  padding: 0; /* Remove default padding */
-  background: none; /* Remove background color */
-  border: none; /* Remove border */
-}
-
-#parkImage button img {
-  margin-top: 10px;
-  width: 30px; /* Adjust width of the image */
-  height: auto; /* Maintain aspect ratio */
-}
-
-* {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 900; 
-  font-style: normal;
-  color: black;
-}
-
+/* Park view styles */
 #parkList {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  gap: 20px; /* Gap between grid items */
   list-style: none;
   padding: 0;
 }
@@ -286,13 +244,94 @@ h1 {
   text-align: center;
   color: #001F3F;
 }
-.search_button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background:black;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
+
+/* Toggle button styles */
+#toggleButton {
+  margin-bottom: 20px;
 }
+
+/* Park image and title styles */
+#parkImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px; /* Add padding for spacing */
+}
+
+#parkImage img {
+  max-width: 50%; /* Make the image smaller */
+  border-radius: 20px; /* Apply rounded borders */
+  margin-bottom: 10px; /* Add margin below the image */
+}
+
+#parkImage h1 {
+  margin-bottom: 10px;
+  color: #001F3F;
+  font-size: 34px;
+}
+.park-display {
+  text-align: center; /* Center-align the content */
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap:wrap; /* Allow items to wrap to the next line */
+  justify-content:space-between; /* Distribute items evenly along the main axis */
+  gap: 10px; /* Add space between grid items */
+ 
+}
+
+.grid-item {
+  width: calc((100% - 40px) / 3); /* Set the width to one-third of the container minus the gap */
+  text-align: center; /* Center */
+  padding: 10px;
+  /* Set the height equal to the width */
+  height: calc((100% - 40px) / 3);
+  margin-bottom: 5px;
+}
+
+.grid-item img {
+  max-width: 100%; /* Ensure the image fits within the container */
+  height: 100%; /* Make the image fill the entire height of its container */
+}
+
+
+.grid-item .desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.row {
+  display:flex;
+}
+
+/* Add this CSS to style the description box */
+.content-container {
+  display: flex;
+  align-items: left; /* Align items vertically */
+  text-align: left;
+}
+
+.description-box {
+  flex: 1;
+  padding: 25px;
+  background-color: #fff;
+  border: 1px solid #001F3F;
+  height: 50%;
+  padding: 10px;
+  padding-top: 50px;
+}
+
+.description-box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.description-box p {
+  font-size: 16px;
+}
+

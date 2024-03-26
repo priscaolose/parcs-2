@@ -5,16 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find Parks</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFbYjdvYojYJvM2v6oclCufAtwE6yPD78&libraries=places"></script>
+    <!-- Include jQuery for autocomplete functionality -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include jQuery UI for autocomplete -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+    <!-- Replace YOUR_API_KEY with your Google Maps API key -->
 </head>
 <body>
     <div id="parkImage">
         <img src="images/parks_photo.png" alt="photo of a park">
         <div>
-            <h1>Enter your ZIP code to find parks near you</h1>
+            <h1>Enter your city to find parks near you</h1>
             <div class="search_container">
-                <input id="zipCodeInput" type="text" class="zipcode_search" placeholder="Zip Code">
-                <button id="searchButton" class="search_button" onclick="searchParks()">Search</button>
+                <!-- Change input type to text for city input -->
+                <input id="cityInput" type="text" class="city_search" placeholder="City">
             </div>            
         </div>
     </div>
