@@ -208,23 +208,38 @@ body{
 }
 
 .input_field {
-  padding-left: 30px; /* Adjust this value to fit your icon */
+  padding-left: 30px;
 }
 
 .fa-solid.fa-user {
   position: absolute;
-  left: 5px; /* Adjust this value to position the icon within the input field */
+  left: 5px; 
   top: 50%;
   transform: translateY(-50%);
 }
 
-.leaderboard-container {
+/*leaderboard styles*/
+.podium{
+  position: absolute;
+  left: 790px;
+  top: 266px;
+  z-index: 1;
   
-  max-width: 800px;
+}
+
+
+
+.leaderboard-container {
+  position: absolute;
+  left: calc(50% - 405.5px); 
+  top: 329px;
+  width: 811px;
+  height: 721px; 
   margin: 0 auto;
   border: 2px solid #4E901E; 
   border-radius: 10px;
   overflow: auto;
+  
 }
 
 table {
@@ -237,15 +252,26 @@ table {
 th, td {
   padding: 8px;
   border-bottom: 1px solid #4E901E;
-  text-align: left;
+  text-align: center;
+
 }
 
 th {
   background-color: #4E901E;
+  height: 150px;
+}
+
+#leaderboard td:first-child, th:first-child {
+  padding-right: 60px; 
+}
+
+#leaderboard td:last-child, th:last-child {
+ text-align: center;
+ padding-right: 100px;
 }
 
 tr:hover {
-  background-color: lightgray;
+  background-color: #808000;
 }
 
 tr {
@@ -254,23 +280,6 @@ tr {
 
 tr:last-child td {
   border-bottom: none;
-}
-
-.podium{
-  position: absolute;
-  width: 197px;
-  height: 225px;
-  left: 790px;
-  top: 172px;
-}
-
-
-.podium{
-  position: absolute;
-  width: 197px;
-  height: 225px;
-  left: 790px;
-  top: 172px;
 }
 
 /* Park view styles */
