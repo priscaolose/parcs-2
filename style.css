@@ -227,7 +227,10 @@ body{
   
 }
 
-
+#leaderboard{
+  border-collapse: collapse;
+  width: 100%;
+}
 
 .leaderboard-container {
   position: absolute;
@@ -238,7 +241,7 @@ body{
   margin: 0 auto;
   border: 2px solid #4E901E; 
   border-radius: 10px;
-  overflow: auto;
+  overflow: hidden;
   
 }
 
@@ -261,6 +264,14 @@ th {
   height: 150px;
 }
 
+tfoot {
+  height: 50px;
+}
+
+td{
+  padding: 12px;
+  font-size: x-large;
+}
 #leaderboard td:first-child, th:first-child {
   padding-right: 60px; 
 }
@@ -270,8 +281,18 @@ th {
  padding-right: 100px;
 }
 
+#leaderboard tbody tr:nth-child(1) td {
+  color: #d4af37; /* Change to the desired color for the top usernames */
+}
+#leaderboard tbody tr:nth-child(2) td {
+  color: #71706e; /* Change to the desired color for the top usernames */
+}
+#leaderboard tbody tr:nth-child(3) td {
+  color: #CD7F32; /* Change to the desired color for the top usernames */
+}
+
 tr:hover {
-  background-color: #808000;
+  background-color:#808000;
 }
 
 tr {
@@ -281,6 +302,7 @@ tr {
 tr:last-child td {
   border-bottom: none;
 }
+
 
 /* Park view styles */
 #parkList {
