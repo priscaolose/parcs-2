@@ -1,0 +1,446 @@
+/* Resetting default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900; 
+    font-style: normal;
+    color:black;
+}
+#unbold{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal; 
+    font-style: normal;
+    color:black;
+}
+#slogan{
+   color: #808000;
+   text-align: center; 
+   font-size: 25px;
+   margin-top: 0px;
+}
+#extra_text{
+  color: #808000;
+  text-align: center; 
+  font-size: 25px;
+  margin-top: 0px;
+}
+
+#page_heading{
+    color:#001F3F;
+    font-size: 64px;
+    position: relative/absolute; 
+    text-align: center;
+
+
+}
+#small_heading{
+    color:#001F3F;
+    font-size: 34px;
+    top: 0px;
+    right: 0px;
+    width: 100px;
+    text-align: right;
+}
+#title{
+    color:#001F3F;
+    text-align: center;
+    font-size: 110px; 
+    margin: 0px;
+}
+button{
+    background-color: #001F3F;
+    color: #FFFFFF;
+    padding: 10px 80px; 
+    border: none; 
+    border-radius: 10px; 
+    font-size: 32px;
+    text-align: center;
+    text-decoration: none; 
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.8;
+  }
+a:link { 
+    text-decoration: none; 
+} 
+a:visited { 
+    text-decoration: none; 
+} 
+a:hover { 
+    text-decoration: none; 
+} 
+a:active { 
+    text-decoration: none; 
+}
+#list-map_button{
+    background-color: #FFFFFF;
+    color: #001F3F;
+    padding: 10px 30px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none; 
+    cursor: pointer;
+}
+
+
+.input_field{
+    padding: 15px 5px; 
+    border: 5px solid #4E901E; 
+    border-radius: 5px; 
+    font-size: 20px;
+    border-radius: 10px; 
+    margin: 10px;
+    width: 600px;   
+    opacity: 0.8;
+
+}
+.input_field::placeholder {
+    color: #ccc; 
+   
+    text-align: left;
+}
+
+.under_text{
+  padding-top: 10px;
+}
+.zipcode_search{
+    /* to use for username 
+    do the following: <input type="text" class="zipcode_search" placeholder="ZIP code"> */
+    padding: 15px 5px; 
+    border: 5px solid #4E901E; 
+    border-radius: 5px; 
+    font-size: 16px;
+    width: 600px; 
+}
+/* Style the placeholder text */
+.zipcode_search::placeholder {
+    color: green; 
+    text-align: center;
+}
+
+#center_img {
+    display: block; 
+    margin: 0 auto; 
+}
+
+body{
+    overflow-x:hidden;
+  }
+
+/* Main content area styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #001F3F ;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
+}
+
+/* Styling for the links inside the navigation */
+.sidenav a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+}
+
+/* Change the color of the links on hover */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-right: 0;
+  padding: 20px;
+  transition: margin-right 0.5s;
+}
+
+
+.hamburger {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 2;
+}
+.bar {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar {
+  background-color: #fff;
+}
+
+.required:after {
+  content:" *";
+  color: red;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input_field {
+  padding-left: 30px;
+}
+
+.fa-solid.fa-user {
+  position: absolute;
+  left: 5px; 
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*leaderboard styles*/
+.podium{
+  position: absolute;
+  left: 790px;
+  top: 266px;
+  z-index: 0;
+  
+}
+
+#leaderboard{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.leaderboard-container {
+  position: absolute;
+  left: calc(50% - 405.5px); 
+  top: 329px;
+  width: 811px;
+  height: 721px; 
+  margin: 0 auto;
+  border: 2px solid #4E901E; 
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+
+}
+
+th, td {
+  padding: 8px;
+  border-bottom: 1px solid #4E901E;
+  text-align: center;
+
+}
+
+th {
+  background-color: #4E901E;
+  height: 150px;
+}
+
+tfoot {
+  height: 50px;
+}
+
+td{
+  padding: 12px;
+  font-size: x-large;
+}
+#leaderboard td:first-child, th:first-child {
+  padding-right: 60px; 
+}
+
+#leaderboard td:last-child, th:last-child {
+ text-align: center;
+ padding-right: 100px;
+}
+
+#leaderboard tbody tr:nth-child(1) td {
+  color: #d4af37; /* Change to the desired color for the top usernames */
+}
+#leaderboard tbody tr:nth-child(2) td {
+  color: #71706e; /* Change to the desired color for the top usernames */
+}
+#leaderboard tbody tr:nth-child(3) td {
+  color: #CD7F32; /* Change to the desired color for the top usernames */
+}
+
+#leaderboard tbody tr:nth-child(1) td:first-child::before {
+  content: "";
+  display: inline-block;
+  width: 20px; 
+  height: 20px; 
+  background-image: url('gold.png'); 
+  background-size: contain; 
+  margin-right: 5px; 
+}
+
+#leaderboard tbody tr:nth-child(2) td:first-child::before {
+  content: ""; /* Empty content */
+  display: inline-block;
+  width: 20px; /* Adjust the width of the trophy icon as needed */
+  height: 20px; /* Adjust the height of the trophy icon as needed */
+  background-image: url('silver.png'); /* Replace 'gold.png' with the path to your trophy image */
+  background-size: contain; /* Ensure the image fits within the specified width and height */
+  margin-right: 5px; /* Adjust the margin between the trophy icon and the username */
+}
+
+#leaderboard tbody tr:nth-child(3) td:first-child::before {
+  content: ""; /* Empty content */
+  display: inline-block;
+  width: 20px; /* Adjust the width of the trophy icon as needed */
+  height: 20px; /* Adjust the height of the trophy icon as needed */
+  background-image: url('bronze.png'); /* Replace 'gold.png' with the path to your trophy image */
+  background-size: contain; /* Ensure the image fits within the specified width and height */
+  margin-right: 5px; /* Adjust the margin between the trophy icon and the username */
+}
+tr:hover {
+  background-color:#808000;
+}
+
+tr {
+  border-radius: 5px;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+
+/* Park view styles */
+#parkList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  gap: 20px; /* Gap between grid items */
+  list-style: none;
+  padding: 0;
+}
+
+#parkList li {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #001F3F;
+}
+
+/* Toggle button styles */
+#toggleButton {
+  margin-bottom: 20px;
+}
+
+/* Park image and title styles */
+#parkImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px; /* Add padding for spacing */
+}
+
+#parkImage img {
+  max-width: 50%; /* Make the image smaller */
+  border-radius: 20px; /* Apply rounded borders */
+  margin-bottom: 10px; /* Add margin below the image */
+}
+
+#parkImage h1 {
+  margin-bottom: 10px;
+  color: #001F3F;
+  font-size: 34px;
+}
+.park-display {
+  text-align: center; /* Center-align the content */
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap:wrap; /* Allow items to wrap to the next line */
+  justify-content:space-between; /* Distribute items evenly along the main axis */
+  gap: 10px; /* Add space between grid items */
+ 
+}
+
+.grid-item {
+  width: calc((100% - 40px) / 3); /* Set the width to one-third of the container minus the gap */
+  text-align: center; /* Center */
+  padding: 10px;
+  /* Set the height equal to the width */
+  height: calc((100% - 40px) / 3);
+  margin-bottom: 5px;
+}
+
+.grid-item img {
+  max-width: 100%; /* Ensure the image fits within the container */
+  height: 100%; /* Make the image fill the entire height of its container */
+}
+
+
+.grid-item .desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.row {
+  display:flex;
+}
+
+/* Add this CSS to style the description box */
+.content-container {
+  display: flex;
+  align-items: left; /* Align items vertically */
+  text-align: left;
+}
+
+.description-box {
+  flex: 1;
+  padding: 25px;
+  background-color: #fff;
+  border: 1px solid #001F3F;
+  height: 50%;
+  padding: 10px;
+  padding-top: 50px;
+}
+
+.description-box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.description-box p {
+  font-size: 16px;
+}
