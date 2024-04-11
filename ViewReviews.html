@@ -7,10 +7,11 @@
     <meta charset="UTF-8">
     <meta name="vxiewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="loginpage.js"></script>
+    <script src="ViewReviews.js"></script>
 </head>
 
 <body>
+
     <!--<button class="openbtn" onclick="openNav()">&#9776;</button>-->
     <div class="header">
         <div id="small_heading">
@@ -50,109 +51,121 @@
         <div class = "ManageParkRatingOptions">
             1. Parking:
             <div class ="stars">
-                <span class="fa-regular fa-star"></span>
-                <span class="fa-regular fa-star"></span>
-                <span class="fa-regular fa-star"></span>
-                <span class="fa-regular fa-star"></span>
-                <span class="fa-regular fa-star"></span>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
             </div>
         </div>
 
         <div class = "ManageParkRatingOptions">
             2. Entrances:
             <div class ="stars">
-                <span class="fa-regular fa-star"></span>
-                <span class="fa-regular fa-star"></span>
-                <span class="fa-regular fa-star"></span>
-                <span class="fa-regular fa-star"></span>
-                <span class="fa-regular fa-star"></span>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
             </div>
         </div>
         <div class = "ManageParkRatingOptions">
             3. Pathways:
             <div class ="stars">
-                <span class="fa-regular fa-star"></span>
-                <span class="fa-regular fa-star"></span>
-                <span class="fa-regular fa-star"></span>
-                <span class="fa-regular fa-star"></span>
-                <span class="fa-regular fa-star"></span>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
             </div>
         </div>
         <div class = "ManageParkRatingOptions">
             4. Restrooms:
             <div class ="stars">
-                <span class="fa-regular fa-star"></span>
-                <span class="fa-regular fa-star"></span>
-                <span class="fa-regular fa-star"></span>
-                <span class="fa-regular fa-star"></span>
-                <span class="fa-regular fa-star"></span>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
             </div>
         </div>
         <div class = "ManageParkRatingOptions">
             5. Seating:
             <div class ="stars">
-                <span class="fa-regular fa-star"></span>
-                <span class="fa-regular fa-star"></span>
-                <span class="fa-regular fa-star"></span>
-                <span class="fa-regular fa-star"></span>
-                <span class="fa-regular fa-star"></span>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
             </div>
         </div>
 
         <div class = "ManageParkRatingOptions">
             6. Signage:
-            <div class ="stars">
-                <span class="fa-regular fa-star"></span>
-                <span class="fa-regular fa-star"></span>
-                <span class="fa-regular fa-star"></span>
-                <span class="fa-regular fa-star"></span>
-                <span class="fa-regular fa-star"></span>
+            <div class="stars">
+              <i class="rating__star fa-regular fa-star" ></i>
+              <i class="rating__star fa-regular fa-star" ></i>
+              <i class="rating__star fa-regular fa-star" ></i>
+              <i class="rating__star fa-regular fa-star" ></i>
+              <i class="rating__star fa-regular fa-star" ></i>
             </div>
         </div>
 
         <div class = "ManageParkRatingOptions">
             7. Amenties:
             <div class ="stars">
-                <span class="fa-regular fa-star"></span>
-                <span class="fa-regular fa-star"></span>
-                <span class="fa-regular fa-star"></span>
-                <span class="fa-regular fa-star"></span>
-                <span class="fa-regular fa-star"></span>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
             </div>
         </div>
-
-        <div class = "ManageParkRatingOptions">
-           
+       
+        <div class = "ManageParkRatingOptions">           
         Additional comments:
         </div>
+            <div>
+                <input type="text"  class="box"  placeholder="Enter text here">
+            </div>
+
             <!--
+                
                 include a box to upload comments down here
             -->
-        <div class = "ManageParkRatingOptions">
-            Upload photos
-            <span class="fa-solid fa-image"></span>:
-
-        </div>
-
+            <div class="ManageParkRatingOptions">
+                <label>
+                    Upload photos <span class="fa-solid fa-image"></span>:
+                    <input type="file" name="file" accept="image/*"  multiple  >
+                    <div id="fileInfo"></div>
+                </label>
+            </div>
+            
         <div class = "ManageParkRatingOptions">
             Overall Rating:
-            <span class="fa-regular fa-star"></span>
-            <span class="fa-regular fa-star"></span>
-            <span class="fa-regular fa-star"></span>
-            <span class="fa-regular fa-star"></span>
-            <span class="fa-regular fa-star"></span>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
         </div>
         <div class = "ManageParkRatingOptions">
             Recommendd to Others?
+            <br>
+            <label>
+                <input type="radio" name="choice-radio">
+                Yes
+              </label>
+              <label>
+                <input type="radio" name="choice-radio">
+                No
+              </label>
         </div>
-
             <!--
                 these should be buttons not just dots
             -->
-            <ul id = "options" >
-                <li>Yes</li>
-                <li>No</li>
-            </ul>
+          <br>
+
             <button>Submit </button>
             
         <p>

@@ -402,20 +402,106 @@ h1 {
   text-align: left;
 
 }
+
 li {
 margin: 10px 0px 0px 0px;}
 
 .ManageParkRatingOptions{
   margin: 10px 0px 0px 0px;
+}
+.ManageParkRatingOptions {
+  margin: 10px 0px 0px 0px;
+  display: block; /* Ensure the container is a block-level element */
+}
 
+.input-wrapper {
+  margin-top: 5px; /* Adjust the margin to position the input box below the text */
 }
 
 .stars {
   display: inline-block;
   color: white; /* Change the color of stars as needed */
-  font-size: 20px; /* Adjust font size as needed */
+  font-size: 20px; /* Adjust font size as needed */  
 }
 .category {
   display: inline-block;
   width: 100px; /* Adjust width as needed */
+}
+
+/*starts here/
+
+/* These are from the trial run*/
+.rating__star {
+  font-size: 1.0em;
+  cursor: pointer;
+  color: #dabd18b2;
+  transition: filter linear .3s;
+}
+
+.rating__star.fa-solid {
+  color: gold; /* Color for filled stars */
+}
+
+.rating__star:hover {
+  filter: drop-shadow(1px 1px 4px gold);
+}
+ 
+.rating {
+  position: relative;
+  width: 180px;
+  background: transparent;
+  display: flex;
+  gap: .3em;
+  padding: 5px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.rating__result {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-10px) translateX(-5px);
+  z-index: -9;
+  font: 3em Arial, Helvetica, sans-serif;
+  color: #ebebeb8e;
+  pointer-events: none;
+}
+
+.box {
+  width: 200px;
+  height: 70px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  margin-left: -2px; /* Half an inch is approximately 12 pixels */
+
+}
+
+.input-field {
+  width: calc(100% - 20px); /* Subtract padding from width */
+  height: 30px;
+  padding: 5px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+  font-size: 14px;
+  border: none; /* Remove border */
+  outline: none; /* Remove outline */
+}
+.input-wrapper {
+  margin-top: 5px; /* Adjust the margin to position the input box below the text */
+}
+.upload-button {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+.upload-button:hover {
+  background-color: #0056b3;
+}
+#options{
+  margin-right: 20px; /* Adjust the value as needed */
 }
