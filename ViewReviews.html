@@ -50,55 +50,55 @@
             <br>
         <div class = "ManageParkRatingOptions">
             1. Parking:
-            <div class ="stars">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-            </div>
+            <div class="stars">
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+              </div>
         </div>
 
         <div class = "ManageParkRatingOptions">
             2. Entrances:
-            <div class ="stars">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-            </div>
+            <div class="stars">
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+              </div>
         </div>
         <div class = "ManageParkRatingOptions">
             3. Pathways:
-            <div class ="stars">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-            </div>
+            <div class="stars">
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+              </div>
         </div>
         <div class = "ManageParkRatingOptions">
             4. Restrooms:
-            <div class ="stars">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-            </div>
+            <div class="stars">
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+              </div>
         </div>
         <div class = "ManageParkRatingOptions">
             5. Seating:
-            <div class ="stars">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-            </div>
-        </div>
+            <div class="stars">
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+              </div>
+
 
         <div class = "ManageParkRatingOptions">
             6. Signage:
@@ -113,13 +113,13 @@
 
         <div class = "ManageParkRatingOptions">
             7. Amenties:
-            <div class ="stars">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-            </div>
+            <div class="stars">
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+              </div>
         </div>
        
         <div class = "ManageParkRatingOptions">           
@@ -135,19 +135,23 @@
             -->
             <div class="ManageParkRatingOptions">
                 <label>
-                    Upload photos <span class="fa-solid fa-image"></span>:
-                    <input type="file" name="file" accept="image/*"  multiple  >
-                    <div id="fileInfo"></div>
+                    <div class="fileInput">
+                        Upload photos: <span class="fa-solid fa-image"></span>
+                        <input type="file" onchange="handleFileInput()" id="fileInput" name="file" accept="image/*" multiple hidden>
+                    </div>
                 </label>
+                <div id="preview"></div>
             </div>
             
         <div class = "ManageParkRatingOptions">
             Overall Rating:
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
+            <div class="stars">
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+              </div>
         </div>
         <div class = "ManageParkRatingOptions">
             Recommendd to Others?
@@ -165,9 +169,7 @@
                 these should be buttons not just dots
             -->
           <br>
-
-            <button>Submit </button>
-            
+            <button>Submit </button> 
         <p>
         </div>
         <!-- <font color= "#001F3F">  Do not have an account? </font> -->    

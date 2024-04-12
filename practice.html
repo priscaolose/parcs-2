@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="vxiewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="RegisterPage.js"></script>
+    <script src="loginpage.js"></script>
 </head>
 
 <body>
@@ -16,6 +16,7 @@
         <div id="small_heading">
             <a href="index.html"> Home</a>
         </div>
+    
         <div class="hamburger" onclick="toggleNavigation()">
             <div class="bar"></div>
             <div class="bar"></div>
@@ -34,54 +35,42 @@
 
     <center>
         <div id = "page_heading">
-            Sign up for Parcs
+            Park Ratings
         </div>  
      
-    <form id ="registerform">
+    <form id ="practiceform">
         <div>
-            <input type ="name"  class="input_field" placeholder="First name" id ="UFname">
+            <input type ="email"  class="input_field" placeholder="Username" id ="Uname">
             <i class="fa-regular fa-user"></i>
-            <label class="required"></label>
         </div>
-
-        <div>
-            <input type ="name"  class="input_field" placeholder="Last name" id ="ULname">
-            <i class="fa-regular fa-user"></i>
-            <label class="required"></label>
-        </div>
-
-        <div>
-            <input type ="email"  class="input_field" placeholder="Email" id ="UEmail">
-            <i class="fa-solid fa-envelope"></i>
-            <label class="required"></label>
-        </div>
-
         <div >
             <input required type="password" class="input_field" placeholder="Password" id ="Upassword"/>
             <!--<i class="fa-solid fa-lock"></i> -->          
             <i class="fa-solid fa-lock toggle_password" onclick="togglePasswordVisibility(this)"></i>
-            <label class="required"></label>
         </div>
-
-        <div>
-            <input type="tel"  class = "input_field" placeholder="Phone Number" name = "uphonenumber" />
-            <i class="fa-solid fa-phone"></i>
-        </div>
-           <br>
+        <br>
+     
         <div class ="button"> 
-                <button type="submit" class = "btn">Create account</button>  
+                <button type="submit" class = "btn">Log in</button>
+                
         </div>
-        <p id="error-message" style="color: red;"></p>
     </form>
-   <div class = "under_text">
-    Already have an account?
-    <a href = "loginpage2.html" style="color: #001F3F;" > Sign in</a>
 
-</div>
+    <div class = "under_text">
+        <input type="checkbox" id="check">
+        <span style='color: #001F3F;'>Remember me</span>    
+    </div>
 
-
+    <div class = "under_text">
+    <span style='color: #001F3F'>
+        Do not have an account?
+        <a href = "RegisterPage.html"style="color: #001F3F;" > Create one</a>
+    </span>
+    </div>
 </center>
 
 </body>
 </html>
 
+    <p></p>
+</html>

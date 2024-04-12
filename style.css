@@ -38,7 +38,6 @@
     position: relative/absolute; 
     text-align: center;
 
-
 }
 #small_heading{
     color:#001F3F;
@@ -186,9 +185,10 @@ body{
 
 
 .hamburger {
-  position: fixed;
+  position: absolute;
   top: 0px;
-  right: 10px;
+  right: 20px; 
+  /*right: -10px;*/
   cursor: pointer;
   z-index: 2;
 }
@@ -434,7 +434,7 @@ margin: 10px 0px 0px 0px;}
 .rating__star {
   font-size: 1.0em;
   cursor: pointer;
-  color: #dabd18b2;
+  color: gold;
   transition: filter linear .3s;
 }
 
@@ -443,7 +443,7 @@ margin: 10px 0px 0px 0px;}
 }
 
 .rating__star:hover {
-  filter: drop-shadow(1px 1px 4px gold);
+  filter: drop-shadow(1px 1px 4px #001F3F);
 }
  
 .rating {

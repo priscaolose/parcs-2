@@ -16,7 +16,6 @@
         <div id="small_heading">
             <a href="index.html"> Home</a>
         </div>
-    
         <div class="hamburger" onclick="toggleNavigation()">
             <div class="bar"></div>
             <div class="bar"></div>
@@ -35,40 +34,41 @@
 
     <center>
         <div id = "page_heading">
-            Park Ratings
+            Sign in to Parcs
         </div>  
-            <div >
-                <input required type="email" class="input_field" placeholder="Username" name="uname"/>
-                <i class="fa-regular fa-user"></i>
-            </div>
-
-            <div >
-                <input required type="password" class="input_field" placeholder="Password" name="uname"/>
-               <!--<i class="fa-solid fa-lock"></i> -->          
-                <i class="fa-solid fa-lock toggle_password" onclick="togglePasswordVisibility(this)"></i>
-            </div>
+     
+    <form id ="practiceform">
+        <div>
+            <input type ="email"  class="input_field" placeholder="Username" id ="Uname">
+            <i class="fa-regular fa-user"></i>
+        </div>
+        <div >
+            <input required type="password" class="input_field" placeholder="Password" id ="Upassword"/>
+            <!--<i class="fa-solid fa-lock"></i> -->          
+            <i class="fa-solid fa-lock toggle_password" onclick="togglePasswordVisibility(this)"></i>
+        </div>
         <br>
-
+     
         <div class ="button"> 
-            <a href="ParksViewPage.html" target="_blank">
-                <button type="Login" class = "btn">Log in</button>
-            </a>
+                <button type="submit" class = "btn">Log in</button>  
         </div>
-        <div class = "under_text">
-            <input type="checkbox" id="check">
-            <span style='color: #001F3F;'>Remember me</span>    
-          
-        </div>
-
-        <div class = "under_text">
-        <span style='color: #001F3F'>
-            Do not have an account?
-            <a href = "RegisterPage.html"style="color: #001F3F;" > Create one</a>
-        </span>
+        <p id="error-message" style="color: red;"></p>
+    </form>
+    
+    <div class = "under_text">
+        <input type="checkbox" id="check">
+        <span style='color: #001F3F;'>Remember me</span>    
     </div>
-        <p>
-        <!-- <font color= "#001F3F">  Do not have an account? </font> -->    
-        </p>
+
+    <div class = "under_text">
+    <span style='color: #001F3F'>
+        Do not have an account?
+        <a href = "RegisterPage.html"style="color: #001F3F;" > Create one</a>
+    </span>
+    </div>
+
 </center>
+
 </body>
 </html>
+
