@@ -423,6 +423,11 @@ margin: 10px 0px 0px 0px;}
   color: white; /* Change the color of stars as needed */
   font-size: 20px; /* Adjust font size as needed */  
 }
+.stars1 {
+  display: inline-block;
+  color: white; /* Change the color of stars as needed */
+  font-size: 20px; /* Adjust font size as needed */  
+}
 .category {
   display: inline-block;
   width: 100px; /* Adjust width as needed */
@@ -504,4 +509,17 @@ margin: 10px 0px 0px 0px;}
 }
 #options{
   margin-right: 20px; /* Adjust the value as needed */
+}
+.popupMessage {
+  display: none; /* Initially hide the pop-up message */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
 }

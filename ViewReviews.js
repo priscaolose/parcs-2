@@ -1,5 +1,6 @@
 
-function toggleNavigation() {
+function toggleNavigation() 
+{
   var sidenav = document.getElementById("mySidenav");
   if (sidenav.style.width == "200px") {
     closeNav();
@@ -8,13 +9,15 @@ function toggleNavigation() {
   }
 }
 
-function openNav() {
+function openNav()
+{
   document.getElementById("mySidenav").style.width = "200px";
   document.getElementById("main").style.marginRight = "200px";
   //document.querySelector(".hamburger").classList.add("open");  
 }
 
-function closeNav() {
+function closeNav() 
+{
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginRight= "0";
  // document.querySelector(".hamburger").classList.remove("open"); 
@@ -23,12 +26,7 @@ function closeNav() {
 document.addEventListener("DOMContentLoaded", function() {
   const ratingStars = [...document.getElementsByClassName("rating__star")];
   const ratingResult = document.querySelector(".rating__result");
-/*
-  // Function to print the rating result
-  function printRatingResult(result, num = 0) {
-      result.textContent = `${num}/5`;
-  }
-  */
+
 
   // Function to execute the rating functionality
   function executeRating(stars) {
@@ -37,75 +35,57 @@ document.addEventListener("DOMContentLoaded", function() {
 
       stars.forEach((star, index) => {
           star.onclick = () => {
-              if (star.className === starClassInactive) {
-                  for (let i = index; i >= 0; i--) {
+            console.log("Index is ", index);
+            const parentId = star.parentNode.parentNode.id; // Get the ID of the parent ManageParkRatingOptions
+            console.log("Parent ID",parentId);
+            console.log("double the parent ID",parentId*5);
+            parentIdDiff = (parentId*5)-1;
+            console.log("Parent ID after subtraction",parentIdDiff)
+            //do index-4 up until what the current index is i
+            if (star.className === starClassInactive)
+             {
+                  let startindex = parentIdDiff-4
+                  for (let i = startindex; i <=index; i++) 
+                  {
                       stars[i].className = starClassActive;
                   }
-              } else {
-                  for (let i = index; i < stars.length; i++) {
-                      stars[i].className = starClassInactive;
-                  }
-              }
+              } 
+              else {
+                // Define the upper and lower boundaries for deselection
+                let border1 = (parentId - 1) * 5;
+                let border2 = parentId * 5 - 1;
+                let startindex = index;
+            
+                // Iterate through the stars starting from the next index
+                while (startindex < border2) {
+                    // Increment the startindex if the next star is active
+                    if (stars[startindex + 1].className === starClassActive) {
+                        startindex++; 
+                    } else {
+                        // Break the loop if the next star is inactive
+                        break;
+                    }
+                }
+            
+                // Deselect stars based on the determined startindex
+                for (let i = startindex; i >= index; i--) {
+                    if (stars[i].className === starClassActive && i >= border1) {
+                        stars[i].className = starClassInactive;
+                    } else {
+                        // If a star doesn't meet the condition, exit the loop
+                        break;
+                    }
+                }
+            }
+            
+
           };
       });
   }
-
   // Call the executeRating function with the rating stars
   executeRating(ratingStars);
 });
 
-/*
-//two images one is an empty star
-function executeRating(stars) {
-  const starClassActive = "fa-solid fa-star";
-  const starClassInactive = "fa-regular fa-star";
-
-    star.onclick = () => {
-      console.log("It got in here");
-
-      if (star.classList.contains(starClassInactive)) {
-        console.log("It got in here");
-        for (let i = index; i >= 0; i--) {
-          stars.add("fa-solid fa-star");
-          stars.remove("fa-regular fa-star");
-        }
-        //printRatingResult(result, index + 1);
-      } else {
-        for (let i = index; i < stars.length; i++) {
-          console.log("It got in here");
-          stars[i].classList.remove("fa-solid fa-star");
-          stars[i].classList.add("fa-regular fa-star");
-        }
-       // printRatingResult(result, index);
-      }
-    };
-}
-
-
-
-*/
-/*function toggleStar(star) {
-  // Toggle the 'fa-star' and 'fa-star-filled' classes for the clicked star
-  star.classList.toggle('fa-star');
-  star.classList.toggle('fa-star-filled');
-
-  // Loop through previous siblings to toggle their classes accordingly
-  var prevStar = star.previousElementSibling;
-  while (prevStar) {
-    prevStar.classList.toggle('fa-star');
-    prevStar.classList.toggle('fa-star-filled');
-    prevStar = prevStar.previousElementSibling;
-  }
-
-  // Loop through next siblings to toggle their classes accordingly
-  var nextStar = star.nextElementSibling;
-  while (nextStar) {
-    nextStar.classList.remove('fa-star-filled');
-    nextStar.classList.add('fa-star');
-    nextStar = nextStar.nextElementSibling;
-  }
-}
-*/
 document.addEventListener("DOMContentLoaded", function() {
 function handleFileInput(event) {
   console.log("it got in here");
@@ -153,7 +133,6 @@ function handleFileInput(event) {
       // Append the container to the preview div
       preview.appendChild(imgContainer);
   }
-
   // New code to display file information
   var fileInfo = `
       <p>File Name: ${files[0].name}</p>
@@ -161,7 +140,52 @@ function handleFileInput(event) {
   `;
   document.getElementById('fileInfo').innerHTML = fileInfo;
 }
-
 document.getElementById('fileInput').addEventListener('change', handleFileInput);
-
 });
+
+
+// JavaScript function to show the pop-up message and clear the content
+function submitReview() {
+  // Show the pop-up message
+  var popup = document.getElementById("popupMessage");
+  popup.style.display = "block";
+
+  // Clear the content after a delay (e.g., 2 seconds)
+  setTimeout(function() 
+  {
+      // Hide the pop-up message
+      popup.style.display = "none";
+
+      // Clear the content of the page
+  }, 2000); // Adjust the delay as needed (2000 milliseconds = 2 seconds)
+  clearContent();
+
+}
+
+// JavaScript function to clear the content of the page
+function clearContent() {
+  console.log("It got in here")
+  // Clear the preview div
+  var preview = document.getElementById('preview');
+  preview.innerHTML = '';
+
+  // Clear the file info
+  //document.getElementById('fileInfo').innerHTML = '';
+
+  // Clear the text input
+  var textInput = document.querySelector('.box');
+  textInput.value = '';
+
+  // Clear the radio buttons
+  var radioButtons = document.querySelectorAll('input[name="choice-radio"]');
+  radioButtons.forEach(function(button) {
+      button.checked = false;
+  });
+
+  // Clear the star ratings
+  var stars = document.querySelectorAll('.rating__star');
+  stars.forEach(function(star) {
+      star.classList.remove('fa-solid');
+      star.classList.add('fa-regular');
+  });
+}

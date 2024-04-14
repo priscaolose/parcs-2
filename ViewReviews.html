@@ -48,9 +48,10 @@
             <br>
           Rating System:  Excellent(5) Good(4) Average(3) Below Average(2) Poor(1)
             <br>
-        <div class = "ManageParkRatingOptions">
+        <div class = "ManageParkRatingOptions" id ="1">
             1. Parking:
             <div class="stars">
+                
                 <i class="rating__star fa-regular fa-star" ></i>
                 <i class="rating__star fa-regular fa-star" ></i>
                 <i class="rating__star fa-regular fa-star" ></i>
@@ -59,7 +60,7 @@
               </div>
         </div>
 
-        <div class = "ManageParkRatingOptions">
+        <div class = "ManageParkRatingOptions" id ="2">
             2. Entrances:
             <div class="stars">
                 <i class="rating__star fa-regular fa-star" ></i>
@@ -69,7 +70,7 @@
                 <i class="rating__star fa-regular fa-star" ></i>
               </div>
         </div>
-        <div class = "ManageParkRatingOptions">
+        <div class = "ManageParkRatingOptions" id ="3">
             3. Pathways:
             <div class="stars">
                 <i class="rating__star fa-regular fa-star" ></i>
@@ -79,7 +80,7 @@
                 <i class="rating__star fa-regular fa-star" ></i>
               </div>
         </div>
-        <div class = "ManageParkRatingOptions">
+        <div class = "ManageParkRatingOptions" id ="4">
             4. Restrooms:
             <div class="stars">
                 <i class="rating__star fa-regular fa-star" ></i>
@@ -89,7 +90,7 @@
                 <i class="rating__star fa-regular fa-star" ></i>
               </div>
         </div>
-        <div class = "ManageParkRatingOptions">
+        <div class = "ManageParkRatingOptions" id ="5">
             5. Seating:
             <div class="stars">
                 <i class="rating__star fa-regular fa-star" ></i>
@@ -100,7 +101,7 @@
               </div>
 
 
-        <div class = "ManageParkRatingOptions">
+        <div class = "ManageParkRatingOptions" id ="6">
             6. Signage:
             <div class="stars">
               <i class="rating__star fa-regular fa-star" ></i>
@@ -111,7 +112,7 @@
             </div>
         </div>
 
-        <div class = "ManageParkRatingOptions">
+        <div class = "ManageParkRatingOptions" id ="7">
             7. Amenties:
             <div class="stars">
                 <i class="rating__star fa-regular fa-star" ></i>
@@ -143,7 +144,7 @@
                 <div id="preview"></div>
             </div>
             
-        <div class = "ManageParkRatingOptions">
+        <div class = "ManageParkRatingOptions" id ="8">
             Overall Rating:
             <div class="stars">
                 <i class="rating__star fa-regular fa-star" ></i>
@@ -153,6 +154,7 @@
                 <i class="rating__star fa-regular fa-star" ></i>
               </div>
         </div>
+
         <div class = "ManageParkRatingOptions">
             Recommendd to Others?
             <br>
@@ -169,11 +171,18 @@
                 these should be buttons not just dots
             -->
           <br>
-            <button>Submit </button> 
-        <p>
+          <button onclick="submitReview()">Submit</button>
+          <p>
         </div>
         <!-- <font color= "#001F3F">  Do not have an account? </font> -->    
         </p>
+        <!-- Add this pop-up message div -->
+        <div id="popupMessage" class="popupMessage">
+            Your review has been successfully submitted!
+        </div>
+
+<!-- Modify the submit button -->
+
 </center>
 </body>
 </html>
