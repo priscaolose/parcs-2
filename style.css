@@ -69,6 +69,18 @@ button{
     text-decoration: none; 
     cursor: pointer;
 }
+.leaveReviewButton {
+  background-color: #001F3F;
+  color: #FFFFFF;
+  padding: 10px 80px; 
+  border: none; 
+  border-radius: 10px; 
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none; 
+  cursor: pointer;
+}
+
 button:hover {
     opacity: 0.8;
   }
@@ -79,7 +91,7 @@ a:visited {
     text-decoration: none; 
 } 
 a:hover { 
-    text-decoration: none; 
+    text-decoration: none;
 } 
 a:active { 
     text-decoration: none; 
