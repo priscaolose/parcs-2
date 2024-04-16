@@ -7,10 +7,12 @@
 
 .header{
   overflow: hidden;
-  padding: 20px 10px;
+  padding: 20px;
   align-items: center;
-  background-color:#f1f1f1;
+  background-color:#FFFFFF;
   height: 150px;
+  margin-bottom: 50px;
+  border: 1px solid #001F3F;
 }
 .header img{
   display: inline-block;
@@ -519,4 +521,11 @@ input:checked + .slider:before {
   background-size: cover;
   position: relative;
   margin: 100px;
+}
+.footer{
+  overflow: hidden;
+  padding: 20px 10px;
+  align-items: center;
+  background-color:#fff;
+  height: 100px;
 }
