@@ -14,16 +14,44 @@
     <!-- Replace YOUR_API_KEY with your Google Maps API key -->
 </head>
 <body>
+    <header>
+        <div class="header">
+            <div class="hamburger" onclick="toggleNav()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+          
+              <div class="sidenav" id="mySidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="ManageAccount.html">Manage Account</a>
+                <a href="LeaderBoard.html">Leaderboard</a>
+                <a href="ViewReviews.html">View Reviews</a>
+                <a href="#">Logout</a>
+              </div>
+              <br>
+        </div>
+        
+        <div class="sidenav" id="mySidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="ManageAccount.html">Manage Account</a>
+            <a href="LeaderBoard.html">Leaderboard</a>
+            <a href="ViewReviews.html">View Reviews</a>
+            <a href="#">Logout</a>
+        </div>
+    </header>
+    
     <div id="parkImage">
-        <img src="images/parks_photo.png" alt="photo of a park">
-        <div>
+        <img src="images/park-search-image.jpg" alt="photo of a park">
+        <div class="content">
             <h1>Enter your city to find parks near you</h1>
             <div class="search_container">
-                <!-- Change input type to text for city input -->
                 <input id="cityInput" type="text" class="city_search" placeholder="City">
             </div>            
         </div>
     </div>
+    
+    
     
     <div id="map"></div>
 

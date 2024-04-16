@@ -17,7 +17,7 @@ $( function() {
         var keycode = (event.keyCode ? event.keyCode : event.which);
         if(keycode == '13'){ // Check if Enter key is pressed
             var city = $('#cityInput').val().toLowerCase().replace(/\s/g, ''); // Get city input and format
-            window.location.href = city + ".html"; // Redirect to corresponding HTML page
+            window.location.href = city + "List.html"; // Redirect to corresponding HTML page
         }
     });
 } );

@@ -5,37 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parks in Denton, TX - Interactive View</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 </head>
 <body>
-    <div class="park-display">
-        <h1>Parks in Denton, TX</h1>
-        <!-- Toggle button -->
-        <button id="toggleButton" onclick="toggleView()">Interactive View</button>
-        <!-- Grid container for interactive view -->
-        <div class="grid-container" id="interactiveView">
-            <!-- Park items -->
-            <div class="grid-item">
-                <a target="_blank" href="north_lakes_park.jpg">
-                    <img src="images/North_Lakes_Park.jpeg" alt="North Lakes Park">
-                </a>
-                <div class="desc">North Lakes Park</div>
-            </div>
-            <!-- Add more park items as needed -->
-            <div class="grid-item">
-                <a target="_blank" href="quakertown_park.jpg">
-                    <img src="images/Quakertown_Park.jpeg" alt="Quakertown Park">
-                </a>
-                <div class="desc">Quakertown Park</div>
-            </div>
-            <div class="grid-item">
-                <a target="_blank" href="eureka_park.jpg">
-                    <img src="images/Eureka_Park.jpeg" alt="Eureka Park">
-                </a>
-                <div class="desc">Eureka Park</div>
-            </div>
-            <!-- Add more park items as needed -->
-        </div>
+    <div class="header">
+        <a href="index.html">
+            <img width="200" height="200" src="images/Parcs.png" alt="Parcs Logo">
+        </a>
+        <div class="hamburger" onclick="toggleNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          
+      
+          <div class="sidenav" id="mySidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="ManageAccount.html">Manage Account</a>
+            <a href="LeaderBoard.html">Leaderboard</a>
+            <a href="ViewReviews.html">View Reviews</a>
+            <a href="#">Logout</a>
+          </div>
+          <br>
     </div>
-    <script src="script.js"></script>
+    
+    <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="ManageAccount.html">Manage Account</a>
+        <a href="LeaderBoard.html">Leaderboard</a>
+        <a href="ViewReviews.html">View Reviews</a>
+        <a href="#">Logout</a>
+    </div>
+
+    <div id="parks-display">
+        <h3>View Parks</h3> 
+    </div>
+
+    <div class="switch-container">
+        <label class="switch">
+            <input type="checkbox" id="toggleCheckbox">
+            <span class="toggle-text">List View
+                <img width="20" height="20" src="images/two-columns-layout.png">
+            </span>
+        </label>
+        <span id="pageIndicator"></span>
+    </div>
+    
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="dentonInteractive.js"></script>
 </body>
 </html>
