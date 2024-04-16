@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Review Tags</title>
+</head>
+<body>
+  <h2>Park Description</h2>
+  <p>This is a description of the park.</p>
+
+  <h3>Tags:</h3>
+  <ul id="tag-list">
+  </ul>
+
+  <!-- call Twinword's API -->
+    <script>
+    const url = 'https://twinword-topic-tagging.p.rapidapi.com/generate/';
+    const options = {
+        method: 'POST',
+        headers: {
+            'content-type': 'application/x-www-form-urlencoded',
+            'X-RapidAPI-Key': 'd19ac2b35cmshe27b672aebe1e8bp110338jsn20708290e14e',
+            'X-RapidAPI-Host': 'twinword-topic-tagging.p.rapidapi.com'
+        },
+        body: new URLSearchParams({
+            text: 'Computer science is the scientific and practical approach to computation and its applications. It is the systematic study of the feasibility, structure, expression, and mechanization of the methodical procedures (or algorithms) that underlie the acquisition, representation, processing, storage, communication of, and access to information, whether such information is encoded as bits in a computer memory or transcribed in genes and protein structures in a biological cell. An alternate, more succinct definition of computer science is the study of automating algorithmic processes that scale. A computer scientist specializes in the theory of computation and the design of computational systems.'
+        })
+    };
+
+    try {
+        const response = await fetch(url, options);
+        const result = await response.text();
+        console.log(result);
+        var tagList = document.getElementById('tag-list');
+        tagList.appendChild(result);
+    } catch (error) {
+        console.error(error);
+    }
+  </script>
+</body>
+</html>
