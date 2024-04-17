@@ -660,6 +660,7 @@ margin: 10px 0px 0px 0px;}
 .input-wrapper {
   margin-top: 5px; /* Adjust the margin to position the input box below the text */
 }
+
 .upload-button {
   cursor: pointer;
   display: inline-block;
