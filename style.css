@@ -9,7 +9,7 @@
   overflow: hidden;
   padding: 20px;
   align-items: center;
-  background-color:#FFFFFF;
+  background-color:#ccc;
   height: 150px;
   margin-bottom: 50px;
   border: 1px solid #001F3F;
@@ -525,7 +525,6 @@ input:checked + .slider:before {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  margin: 100px;
 }
 .lake-forest{
   background-image: url("images/lakeForest_park.jpeg");
