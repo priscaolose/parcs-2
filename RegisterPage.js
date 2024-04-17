@@ -79,26 +79,26 @@ function toggleNavigation() {
         console.log("username", UEmail.value);
         console.log("Upassword", upassword.value);
         console.log("form ID", form.id);
-  
-        if (uFname.value === "" || uLname.value === ""|| UEmail.value==""||upassword.value=="")
-        {
-            if(uFname.value==""){
-              errorMessage.textContent = "Email is required";
-                console.log("First name is required");
-            }
-            if(uLname.value==""){
-                errorMessage.textContent = "Email is required";
-                  console.log("Last name is required");
-              }
+        let errorMessages = [];
 
-            if(upassword.value==""){
-              console.log("Userpassword is required");
-              errorMessage.textContent = "Password is required";
-            }
-            if(UEmail.value==""){
-                errorMessage.textContent = "Email is required";
-                  console.log("Last name is required");
-              }
+        // Check each field and push corresponding error messages into the array
+        if (uFname.value === "") {
+            errorMessages.push("First name is required");
+        }
+        if (uLname.value === "") {
+            errorMessages.push("Last name is required");
+        }
+        if (UEmail.value === "") {
+            errorMessages.push("Email is required");
+        }
+        if (upassword.value === "") {
+            errorMessages.push("Password is required");
+        }
+        
+        // Display all error messages together
+        if (errorMessages.length > 0) {
+            errorMessage.textContent = errorMessages.join(", ");
+            console.log("Errors:", errorMessages.join(", "));
         }
 
         else{
