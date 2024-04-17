@@ -18,7 +18,6 @@
             <img width="200" height="250" src="images/Parcs.png" alt="Parcs Logo">
         </a>
 
-       
     
         <div class="hamburger" onclick="toggleNavigation()">
             <div class="bar"></div>
@@ -43,13 +42,15 @@
         <br>
         
        <div class =  "ManagePark">
-            Thank you for rating the accessibilty of the park you visited. Your feedback helps us create inclusive spaces.
-            <br>
-            Please provide ratings, comments and a photo from your visit. 
+        Please leave ratings from your visit.Your feedback helps us create inclusive spaces.
             <br>
             <br>
-          Rating System:  Excellent(5) Good(4) Average(3) Below Average(2) Poor(1)
-            <br>
+        <div id ="Park Name" type ="text">
+            Enter the name of the park:
+        </div>
+        <div id ="DateVisited" type = "date">
+            Enter the date visited:
+        </div>
         <div class = "ManageParkRatingOptions" id ="1">
             1. Parking:
             <div class="stars">
@@ -126,10 +127,9 @@
         </div>
        
         <div class = "ManageParkRatingOptions">           
-        Additional comments:
         </div>
             <div>
-                <input type="text"  class="box"  placeholder="Enter text here">
+                <input type="text"  class="box"  placeholder="Additional Comments">
             </div>
 
             <!--
@@ -183,6 +183,7 @@
         </p>
         <!-- Add this pop-up message div -->
         <div id="popupMessage" class="popupMessage">
+            Thank you for leaving your rating.
             Your review has been successfully submitted!
         </div>
 
