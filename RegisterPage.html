@@ -1,95 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <script src="https://kit.fontawesome.com/a3303f42a6.js" crossorigin="anonymous"></script>
-    
-    <title>ParcsRegisterPage</title>
+    <script src="https://kit.fontawesome.com/a3303f42a6.js" crossorigin="anonymous"></script> 
+    <title>ParcsLoginPage</title>
     <meta charset="UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="vxiewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="loginpage.js"></script>
+    <script src="RegisterPage.js"></script>
 </head>
 
 <body>
-    <div id = "small_heading">
-    <a href="index.html">Home</a>
+    <!--<button class="openbtn" onclick="openNav()">&#9776;</button>-->
+    <div class="header">
+        <a href="index.html">
+            <img width="200" height="250" src="images/Parcs.png" alt="Parcs Logo">
+        </a>
+        <div class="hamburger" onclick="toggleNavigation()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
     </div>
 
-    <!--<button class="openbtn" onclick="openNav()">&#9776;</button>-->
-
-    <div class="hamburger" onclick="toggleNav()">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
-      
-  
       <div class="sidenav" id="mySidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="ManageAccount.html">Manage Account</a>
         <a href="LeaderBoard.html">Leaderboard</a>
-        <a href="ViewReviews.html">View Reviews</a>
+        <a href="LeaveReviews.html">Leave Reviews</a>
         <a href="#">Logout</a>
       </div>
       <br>
 
     <center>
+        <div id = "page_heading">
+            Sign up for Parcs
+        </div>  
+     
+    <form id ="registerform">
+        <div>
+            <input type ="name"  class="input_field" placeholder="First name" id ="UFname">
+            <i class="fa-regular fa-user"></i>
+            <label class="required"></label>
+        </div>
 
-    <div id = "page_heading">
-        Sign up for Parcs
-    </div>  
+        <div>
+            <input type ="name"  class="input_field" placeholder="Last name" id ="ULname">
+            <i class="fa-regular fa-user"></i>
+            <label class="required"></label>
+        </div>
 
-    <div>
-        <input type ="text"  class = "input_field"  placeholder="First name" name = "uname"/>
-        <i class="fa-regular fa-user"></i>
-        <label class="required"></label>
-    </div>
-      <!--  <label class="required"></label> --> 
+        <div>
+            <input type ="email"  class="input_field" placeholder="Email" id ="UEmail">
+            <i class="fa-solid fa-envelope"></i>
+            <label class="required"></label>
+        </div>
 
-      <div >
-        <input type ="text" class = "input_field" placeholder= "Last name" name = "uname"/>
-        <i class="fa-regular fa-user"></i>
-        <label class="required"></label>
-    </div>
-      <!--  <label class="required"></label> --> 
-  
-    
-      <div >
-        <input type="email" class = "input_field" autocapatilize = "off"  autocorrect="off" spellcheck="false" placeholder="Email" name = "uemail"  />
-        <i class="fa-solid fa-envelope"></i>
-        <label class="required"></label>
+        <div >
+            <input required type="password" class="input_field" placeholder="Password" id ="Upassword"/>
+            <!--<i class="fa-solid fa-lock"></i> -->          
+            <i class="fa-solid fa-lock toggle_password" onclick="togglePasswordVisibility(this)"></i>
+            <label class="required"></label>
+        </div>
 
-        <!--  <label class="required"></label> --> 
-    </div>
-
-    <div >
-        <input type="password" class = "input_field"  placeholder="Password" name = "upassword"/>
-        <i class="fa-solid fa-lock toggle_password" onclick="togglePasswordVisibility(this)"></i>
-        <label class="required"></label>
-
-    </div>
-
-    <div>
-        <input type="tel"  class = "input_field" placeholder="Phone Number" name = "uphonenumber" />
-        <i class="fa-solid fa-phone"></i>
-
-    </div>
-       
-    <br>
-  <div class ="button"> 
-    <a href="ParksViewPage.html" target="_blank">
-        <button type="Login" class = "btn">Create Account</button>
-    </a>
-
-  </div>
-
-  <div class = "under_text">
+        <div>
+            <input type="tel"  class = "input_field" placeholder="Phone Number" name = "uphonenumber" />
+            <i class="fa-solid fa-phone"></i>
+        </div>
+           <br>
+        <div class ="button"> 
+                <button type="submit" class = "btn">Create account</button>  
+        </div>
+        <p id="error-message" style="color: red;"></p>
+    </form>
+   <div class = "under_text">
     Already have an account?
-    <a href = "loginpage2.html"> Sign in</a>
+    <a href = "loginpage2.html" style="color: #001F3F;" > Sign in</a>
+
 </div>
 
 
 </center>
 
 </body>
-
 </html>
+
