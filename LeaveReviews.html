@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/a3303f42a6.js" crossorigin="anonymous"></script> 
+    <title>ManageAccount</title>
+    <meta charset="UTF-8">
+    <meta name="vxiewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="ViewReviews.js"></script>
+</head>
+
+<body>
+
+    <!--<button class="openbtn" onclick="openNav()">&#9776;</button>-->
+    <div class="header">
+        <a href="index.html">
+            <img width="200" height="250" src="images/Parcs.png" alt="Parcs Logo">
+        </a>
+
+    
+        <div class="hamburger" onclick="toggleNavigation()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+    
+      <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="ManageAccount.html">Manage Account</a>
+        <a href="LeaderBoard.html">Leaderboard</a>
+        <a href="LeaveReviews.html">Leave Reviews</a>
+        <a href="#">Logout</a>
+      </div>
+      <br>
+
+    <center>
+        <div id = "page_heading">
+            Park Ratings
+        </div>  
+        <br>
+        
+       <div class =  "ManagePark">
+        Please leave ratings from your visit.Your feedback helps us create inclusive spaces.
+            <br>
+            <br>
+            <div>
+                Enter the name of the park:
+                <input type="text"  class="smallinputbox"  id ="Park Name" placeholder="Enter text here">
+            </div>
+
+            
+<br>
+        <div >
+            Enter the date you visited:
+            <input type="date"  class="smallinputbox"  id = "DateVisited" placeholder="Enter text here">
+        </div>
+        <div class = "ManageParkRatingOptions" id ="1">
+            1. Parking:
+            <div class="stars">
+                
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+              </div>
+        </div>
+
+        <div class = "ManageParkRatingOptions" id ="2">
+            2. Entrances:
+            <div class="stars">
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+              </div>
+        </div>
+        <div class = "ManageParkRatingOptions" id ="3">
+            3. Pathways:
+            <div class="stars">
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+              </div>
+        </div>
+        <div class = "ManageParkRatingOptions" id ="4">
+            4. Restrooms:
+            <div class="stars">
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+              </div>
+        </div>
+        <div class = "ManageParkRatingOptions" id ="5">
+            5. Seating:
+            <div class="stars">
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+              </div>
+
+
+        <div class = "ManageParkRatingOptions" id ="6">
+            6. Signage:
+            <div class="stars">
+              <i class="rating__star fa-regular fa-star" ></i>
+              <i class="rating__star fa-regular fa-star" ></i>
+              <i class="rating__star fa-regular fa-star" ></i>
+              <i class="rating__star fa-regular fa-star" ></i>
+              <i class="rating__star fa-regular fa-star" ></i>
+            </div>
+        </div>
+
+        <div class = "ManageParkRatingOptions" id ="7">
+            7. Amenties:
+            <div class="stars">
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+              </div>
+        </div>
+       
+        <div class = "ManageParkRatingOptions">           
+        </div>
+            <div>
+                <input type="text"  class="box"  placeholder="Additional Comments">
+            </div>
+
+            <!--
+                
+                include a box to upload comments down here
+            -->
+            <div class="ManageParkRatingOptions">
+                <label>
+                    <div class="fileInput">
+                        Upload photos: <span class="fa-solid fa-image"></span>
+                        <input type="file" onchange="handleFileInput()" id="fileInput" name="file" accept="image/*" multiple hidden>
+                    </div>
+                </label>
+                <div id="preview"></div>
+            </div>
+            
+        <div class = "ManageParkRatingOptions" id ="8">
+            Overall Rating:
+            <div class="stars">
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+                <i class="rating__star fa-regular fa-star" ></i>
+              </div>
+        </div>
+
+        <div class = "ManageParkRatingOptions">
+            Recommendd to Others?
+            <br>
+            <label>
+                <input type="radio" name="choice-radio">
+                Yes
+              </label>
+              <label>
+                <input type="radio" name="choice-radio">
+                No
+              </label>
+        </div>
+            <!--
+                these should be buttons not just dots
+            -->
+          
+          <br>
+          
+          
+
+        <button class="leaveReviewButton"onclick="submitReview()">Submit</button>
+
+        <!-- <font color= "#001F3F">  Do not have an account? </font> -->    
+        </p>
+        <!-- Add this pop-up message div -->
+        <div id="popupMessage" class="popupMessage">
+            Thank you for leaving your rating.
+            Your review has been successfully submitted!
+        </div>
+
+<!-- Modify the submit button -->
+
+</center>
+</body>
+</html>

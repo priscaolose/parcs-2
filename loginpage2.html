@@ -2,39 +2,32 @@
 <html lang="en">
 
 <head>
-    <script src="https://kit.fontawesome.com/a3303f42a6.js" crossorigin="anonymous"></script>
-    
+    <script src="https://kit.fontawesome.com/a3303f42a6.js" crossorigin="anonymous"></script> 
     <title>ParcsLoginPage</title>
     <meta charset="UTF-8">
-    
     <meta name="vxiewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="loginpage.js"></script>
 </head>
 
 <body>
-    
     <!--<button class="openbtn" onclick="openNav()">&#9776;</button>-->
     <div class="header">
-        <div id="small_heading">
-            <a href="index.html"> Home</a>
-            <!-- how to make this not show a line beneath it when loaded-->
-        </div>
-    
-        <div class="hamburger" onclick="toggleNav()">
+        <a href="index.html">
+            <img width="200" height="250" src="images/Parcs.png" alt="Parcs Logo" >
+        </a>
+        <div class="hamburger" onclick="toggleNavigation()">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
     </div>
-    
 
-      
       <div class="sidenav" id="mySidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="ManageAccount.html">Manage Account</a>
         <a href="LeaderBoard.html">Leaderboard</a>
-        <a href="ViewReviews.html">View Reviews</a>
+        <a href="LeaveReviews.html">Leave Reviews</a>
         <a href="#">Logout</a>
       </div>
       <br>
@@ -43,44 +36,42 @@
         <div id = "page_heading">
             Sign in to Parcs
         </div>  
-    
 
-            <div >
-                <input required type="email" class="input_field" placeholder="Username" name="uname"/>
-                <i class="fa-regular fa-user"></i>
-            </div>
+     
+    <form id ="practiceform">
+        <div>
+            <input type ="email"  class="input_field" placeholder="Username" id ="Uname">
+            <i class="fa-regular fa-user"></i>
+        </div>
+        <div >
+            <input required type="password" class="input_field" placeholder="Password" id ="Upassword"/>
+            <!--<i class="fa-solid fa-lock"></i> -->          
+            <i class="fa-solid fa-lock toggle_password" onclick="togglePasswordVisibility(this)"></i>
+        </div>
 
-            <div >
-                <input required type="password" class="input_field" placeholder="Password" name="uname"/>
-                      
-                <i class="fa-solid fa-lock toggle_password" onclick="togglePasswordVisibility(this)"></i>
-            </div>
         <br>
-
+     
         <div class ="button"> 
-            <a href="zipcode.html" target="_blank">
-                <button type="Login" class = "btn">Log in</button>
-            </a>
-        </div>
-        <div class = "under_text">
-            <input type="checkbox" id="check">
-            <span style='color: #001F3F;'>Remember me</span>    
-          
-        </div>
+                <button type="submit" class = "btn">Log in</button>  
 
-        <div class = "under_text">
-        <span style='color: #001F3F'>
-            Do not have an account?
-            <a href = "RegisterPage.html"> Create one</a>
-        </span>
-    </div>
+        </div>
+        <p id="error-message" style="color: red;"></p>
+    </form>
     
-        <p>
-        <!-- <font color= "#001F3F">  Do not have an account? </font> --> 
-         
-        </p>
+    <div class = "under_text">
+        <input type="checkbox" id="check">
+        <span style='color: #001F3F;'>Remember me</span>    
+    </div>
+
+    <div class = "under_text">
+    <span style='color: #001F3F'>
+        Do not have an account?
+        <a href = "RegisterPage.html"style="color: #001F3F;" > Create one</a>
+    </span>
+    </div>
 
 </center>
 
 </body>
 </html>
+
