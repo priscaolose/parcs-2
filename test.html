@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Review Tags</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extract Hashtags</title>
 </head>
 <body>
-  <h2>Park Description</h2>
-  <p>This is a description of the park.</p>
+    <div id="review">
+        This is a #great #product, #loving it so far! #Quality is top-notch.
+    </div>
+    
+    <div id="hashtags">
+        <!-- Hashtags will be displayed here -->
+    </div>
 
-  <h3>Tags:</h3>
-  <ul id="tag-list">
-  </ul>
-
-  <!-- call Twinword's API -->
     <script>
-    const url = 'https://twinword-topic-tagging.p.rapidapi.com/generate/';
-    const options = {
-        method: 'POST',
-        headers: {
-            'content-type': 'application/x-www-form-urlencoded',
-            'X-RapidAPI-Key': 'd19ac2b35cmshe27b672aebe1e8bp110338jsn20708290e14e',
-            'X-RapidAPI-Host': 'twinword-topic-tagging.p.rapidapi.com'
-        },
-        body: new URLSearchParams({
-            text: 'Computer science is the scientific and practical approach to computation and its applications. It is the systematic study of the feasibility, structure, expression, and mechanization of the methodical procedures (or algorithms) that underlie the acquisition, representation, processing, storage, communication of, and access to information, whether such information is encoded as bits in a computer memory or transcribed in genes and protein structures in a biological cell. An alternate, more succinct definition of computer science is the study of automating algorithmic processes that scale. A computer scientist specializes in the theory of computation and the design of computational systems.'
-        })
-    };
-
-    try {
-        const response = await fetch(url, options);
-        const result = await response.text();
-        console.log(result);
-        var tagList = document.getElementById('tag-list');
-        tagList.appendChild(result);
-    } catch (error) {
-        console.error(error);
-    }
-  </script>
+        function extractHashtags() {
+            // Get the text content of the review
+            var reviewText = document.getElementById("review").textContent;
+            
+            // Regular expression to find hashtags
+            var regex = /#[a-zA-Z0-9_]+/g;
+            
+            // Extract hashtags
+            var hashtags = reviewText.match(regex);
+            
+            // Display hashtags
+            var hashtagsContainer = document.getElementById("hashtags");
+            hashtagsContainer.innerHTML = ""; // Clear previous content
+            
+            if (hashtags !== null) {
+                // Create <a> tags for each hashtag
+                hashtags.forEach(function(tag) {
+                    var tagElement = document.createElement("a");
+                    tagElement.href = "#" + tag.substring(1); // Remove the '#' from the tag
+                    tagElement.textContent = tag;
+                    tagElement.classList.add("hashtag");
+                    hashtagsContainer.appendChild(tagElement);
+                    hashtagsContainer.appendChild(document.createTextNode(" "));
+                });
+            }
+        }
+        
+        // Call the function when the page loads
+        window.onload = extractHashtags;
+    </script>
 </body>
 </html>
