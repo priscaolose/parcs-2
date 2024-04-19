@@ -7,11 +7,10 @@
 </head>
 <body>
     <div class="header">
-        <div id="small_heading">
-            <a href="index.html"> Home</a>
-            <!-- how to make this not show a line beneath it when loaded-->
-        </div>
-        <div class="hamburger" onclick="toggleNav()">
+      <a href="index.html">
+        <img width="200" height="250" src="images/Parcs.png" alt="Parcs Logo" >
+    </a>
+        <div class="hamburger" onclick="toggleNavigation()">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
@@ -35,26 +34,31 @@
         <a href="ViewReviews.html">View Reviews</a>
         <a href="#">Logout</a>
     </div>
-
+    
+    <!-- Main Page Content -->
     <div id = "page_heading">
       <br>
         Leaderboard
     </div>  
-    <br> <br>
-
+  
     <div class="podium">
-     <!-- <img  src="" alt="Podium"> -->
+     <img  src="podium.png" alt="Podium" height="225px" width="190px">
     </div>
     <div class="leaderboard-container">
     <table id="leaderboard">
       <thead>
         <tr>
-          <th>Username</th>
-          <th>Rank</th>
+          <th style="font-size:xx-large; color: white;">Username</th>
+          <th style="font-size:xx-large; color: white;">Rank</th>
         </tr>
       </thead>
       <tbody>
       </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="2"></th>
+        </tr>
+      </tfoot>
     </table>
     </div>
     <script src="leaderboard.js"></script>

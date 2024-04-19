@@ -348,23 +348,41 @@ body{
 }
 
 .input_field {
-  padding-left: 30px; /* Adjust this value to fit your icon */
+  padding-left: 30px;
 }
 
 .fa-solid.fa-user {
   position: absolute;
-  left: 5px; /* Adjust this value to position the icon within the input field */
+  left: 5px; 
   top: 50%;
   transform: translateY(-50%);
 }
 
-.leaderboard-container {
+/*leaderboard styles*/
+.podium{
+  position: absolute;
+  left: 790px;
+  top: 266px;
+  z-index: 0;
   
-  max-width: 800px;
+}
+
+#leaderboard{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.leaderboard-container {
+  position: absolute;
+  left: calc(50% - 405.5px); 
+  top: 329px;
+  width: 811px;
+  height: 721px; 
   margin: 0 auto;
   border: 2px solid #4E901E; 
   border-radius: 10px;
-  overflow: auto;
+  overflow: hidden;
+  z-index: -1;
 }
 
 table {
@@ -377,15 +395,73 @@ table {
 th, td {
   padding: 8px;
   border-bottom: 1px solid #4E901E;
-  text-align: left;
+  text-align: center;
+
 }
 
 th {
   background-color: #4E901E;
+  height: 150px;
 }
 
+tfoot {
+  height: 50px;
+}
+
+td{
+  padding: 12px;
+  font-size: x-large;
+}
+#leaderboard td:first-child, th:first-child {
+  padding-right: 60px; 
+}
+
+#leaderboard td:last-child, th:last-child {
+ text-align: center;
+ padding-right: 100px;
+}
+
+#leaderboard tbody tr:nth-child(1) td {
+  color: #d4af37; /* Change to the desired color for the top usernames */
+}
+#leaderboard tbody tr:nth-child(2) td {
+  color: #71706e; /* Change to the desired color for the top usernames */
+}
+#leaderboard tbody tr:nth-child(3) td {
+  color: #CD7F32; /* Change to the desired color for the top usernames */
+}
+
+#leaderboard tbody tr:nth-child(1) td:first-child::before {
+  content: "";
+  display: inline-block;
+  width: 20px; 
+  height: 20px; 
+  background-image: url('gold.png'); 
+  background-size: contain; 
+  margin-right: 5px; 
+}
+
+#leaderboard tbody tr:nth-child(2) td:first-child::before {
+  content: ""; /* Empty content */
+  display: inline-block;
+  width: 20px; /* Adjust the width of the trophy icon as needed */
+  height: 20px; /* Adjust the height of the trophy icon as needed */
+  background-image: url('silver.png'); /* Replace 'gold.png' with the path to your trophy image */
+  background-size: contain; /* Ensure the image fits within the specified width and height */
+  margin-right: 5px; /* Adjust the margin between the trophy icon and the username */
+}
+
+#leaderboard tbody tr:nth-child(3) td:first-child::before {
+  content: ""; /* Empty content */
+  display: inline-block;
+  width: 20px; /* Adjust the width of the trophy icon as needed */
+  height: 20px; /* Adjust the height of the trophy icon as needed */
+  background-image: url('bronze.png'); /* Replace 'gold.png' with the path to your trophy image */
+  background-size: contain; /* Ensure the image fits within the specified width and height */
+  margin-right: 5px; /* Adjust the margin between the trophy icon and the username */
+}
 tr:hover {
-  background-color: lightgray;
+  background-color:#808000;
 }
 
 tr {
@@ -396,22 +472,6 @@ tr:last-child td {
   border-bottom: none;
 }
 
-.podium{
-  position: absolute;
-  width: 197px;
-  height: 225px;
-  left: 790px;
-  top: 172px;
-}
-
-
-.podium{
-  position: absolute;
-  width: 197px;
-  height: 225px;
-  left: 790px;
-  top: 172px;
-}
 
 
 h1 {
@@ -765,6 +825,7 @@ margin: 10px 0px 0px 0px;}
 .input-wrapper {
   margin-top: 5px; /* Adjust the margin to position the input box below the text */
 }
+
 .upload-button {
   cursor: pointer;
   display: inline-block;
