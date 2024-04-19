@@ -1,27 +1,112 @@
-/* Resetting default margins and paddings */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+/* Header Styles */
+.header {
+  background-color: #FAF9F8;
+  padding: 20px 50px 0 50px; 
+  margin-bottom: 50px;
 }
 
-.header{
-  overflow: hidden;
-  padding: 20px;
-  align-items: center;
-  background-color:#ccc;
-  height: 150px;
-  margin-bottom: 50px;
-  border: 1px solid #001F3F;
+.logo {
+  display: flex;
+  padding-bottom: 5px;
 }
-.header img{
-  display: inline-block;
-  padding-bottom: 50px;
+
+.logo img {
+  max-height: 50px;
 }
-header a {
+
+.logo span {
+  font-size: 32px;
+  font-family: 'Gagarin';
+  color: #001F3F;
+}
+
+.nav-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-left: auto; 
+}
+
+.nav-menu li {
   display: inline-block;
-  vertical-align: middle;
+  margin-left: 20px;
+}
+
+.nav-menu li a {
   text-decoration: none;
+  color: #001F3F;
+}
+
+/* Body Content Styles */
+.body-content {
+  padding: 50px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  background-color: #FAF9F8;
+}
+
+#center_img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 30px; 
+  width: 500px;
+}
+
+h1 {
+  margin-top: 150px;
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-family: 'Gagarin';
+  float: left;
+}
+
+.slogan {
+  font-size: 24px;
+  color: #666;
+  margin-bottom: 30px;
+  text-align: left; 
+  padding-top: 220px;
+  padding-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4E901E;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  align-items: center;
+  height: auto;
+  width: 300px;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #16A085;
+}
+
+.footer {
+  background-color: #FAF9F8;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+
+@font-face {
+  font-family: 'Gagarin';
+  src: url('Gagalin-Regular.otf');
 }
 
 *{
@@ -39,10 +124,13 @@ header a {
     color:black;
 }
 #slogan{
-   color: #808000;
-   text-align: center; 
-   font-size: 25px;
-   margin-top: 0px;
+    padding: 10px 0 10px;
+    color: #808000;
+    margin: 120px 0 25px 0;
+    font-family: 'Garet';
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 24px;
 }
 #extra_text{
   color: #808000;
@@ -71,12 +159,6 @@ header a {
   /* Add any other styling you need for the anchor element */
 }
 
-#title{
-    color:#001F3F;
-    text-align: center;
-    font-size: 110px; 
-    margin: 0px;
-}
 button{
     background-color: #001F3F;
     color: #FFFFFF;
@@ -87,6 +169,7 @@ button{
     text-align: center;
     text-decoration: none; 
     cursor: pointer;
+    
 }
 .leaveReviewButton {
   background-color: #001F3F;
@@ -141,7 +224,6 @@ a:active {
 }
 .input_field::placeholder {
     color: #ccc; 
-   
     text-align: left;
 }
 
@@ -167,8 +249,31 @@ a:active {
 #center_img {
     display: block; 
     margin: 0 auto; 
+    height: 105;
 }
 
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .body-content {
+      padding: 10px;
+  }
+  
+  #center_img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+  }
+  
+  #slogan {
+      font-size: 16px;
+  }
+
+  .find-parks-button {
+      font-size: 16px;
+      padding: 8px 16px;
+  }
+}
 body{
     overflow-x:hidden;
   }
@@ -365,7 +470,6 @@ input:checked + .slider:before {
 }
 
 .switch-container {
- 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -553,13 +657,14 @@ input:checked + .slider:before {
   position: relative;
   margin: 100px;
 }
-.footer{
-  overflow: hidden;
-  padding: 20px 10px;
-  align-items: center;
-  background-color:#fff;
-  height: 100px;
+
+
+.footer h3 {
+  margin: 0; /* Remove default margin */
+  font-size: 18px; /* Adjust font size */
+  color: #FFFFFF;
 }
+
 
 .ManagePark { 
   width: 600px;
