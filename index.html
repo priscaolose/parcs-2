@@ -1,49 +1,64 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Parcs</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <script src="loginpage.js"></script>
-    </head>
-    <body>
-        <div class="header">
-            <a href="index.html">
-                <img width="200" height="200" src="images/Parcs.png" alt="Parcs Logo">
-            </a>
-            <div class="hamburger" onclick="toggleNavigation()">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-              </div>
-              
-          
-              <div class="sidenav" id="mySidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="ManageAccount.html">Manage Account</a>
-                <a href="LeaderBoard.html">Leaderboard</a>
-                <a href="LeaveReviews.html">Leave Reviews</a>
-                <a href="#">Logout</a>
-              </div>
-              <br>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcs</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Header section -->
+        <div class="row header">
+            <div class="col">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/ParcsLogo.png" alt="Parcs Logo">
+                        <span>Parcs</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col navbar-wrapper">
+                <nav class="navbar">
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="loginpage2.html">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        
-        <div class="sidenav" id="mySidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="ManageAccount.html">Manage Account</a>
-            <a href="LeaderBoard.html">Leaderboard</a>
-            <a href="ViewReviews.html">View Reviews</a>
-            <a href="#">Logout</a>
+
+        <!-- Body content section -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h1>Welcome To Parcs</h1>
+                    <div class="slogan-wrapper">
+                        <p class="slogan">Parks Without Borders, ensuring access and enjoyment for all.</p>
+                    </div>
+                    <a href="loginpage2.html" class="btn btn-primary">Find Parks</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/Parcs-9.png" alt="Parcs Logo" id="center_img" height="344px" width="344px">
+                </div>
+            </div>
         </div>
-        
-        <br>
-        <br><br><br>
-        <img  src="ParcsLogo.png" alt="Parcs Logo" id="center_img" height="344px" width="344px">
-        <h1 id="title">Parcs</h1>
-        <h2 id="slogan">"Parks Without Borders, For All to Enjoy"</h2>
-        <br><br>
-        <a href="loginpage2.html">
-            <button id="center_img">Login / Sign up<br>to find parks</button>  
-        </a>
-    </body>
+    </div>
+
+    <!-- Footer section -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="footer-container">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
