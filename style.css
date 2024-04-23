@@ -17,7 +17,6 @@
 
 .logo span {
   font-size: 32px;
-  font-family: 'Gagarin';
   color: #001F3F;
 }
 
@@ -59,8 +58,8 @@ h1 {
   margin-top: 150px;
   font-size: 36px;
   margin-bottom: 20px;
-  font-family: 'Gagarin';
   float: left;
+  font-weight: 900;
 }
 
 .slogan {
@@ -70,6 +69,7 @@ h1 {
   text-align: left; 
   padding-top: 220px;
   padding-bottom: 10px;
+  font-style: italic;
 }
 
 .btn {
@@ -110,12 +110,11 @@ h1 {
 }
 
 *{
-    font-family: "Montserrat", sans-serif;
+    font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
-    font-weight: 900; 
-    font-style: normal;
-    color:black;
-}
+    font-weight: 400;
+  }
+  
 #unbold{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
