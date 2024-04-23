@@ -3,37 +3,41 @@
 
 <head>
     <script src="https://kit.fontawesome.com/a3303f42a6.js" crossorigin="anonymous"></script> 
-    <title>ParcsLoginPage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In To Parcs</title>
     <meta charset="UTF-8">
     <meta name="vxiewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="loginpage.js"></script>
 </head>
 
 <body>
-    <!--<button class="openbtn" onclick="openNav()">&#9776;</button>-->
-    <div class="header">
-        <a href="index.html">
-            <img width="200" height="250" src="images/Parcs.png" alt="Parcs Logo" >
-        </a>
-        <div class="hamburger" onclick="toggleNavigation()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+    <div class="container-fluid">
+        <!-- Header section -->
+        <div class="row header">
+            <div class="col">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/ParcsLogo.png" alt="Parcs Logo" height="30px" width="30px" style="margin-bottom: 10px;">
+                        <span style="font-weight: 500;">parcs</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col navbar-wrapper">
+                <nav class="navbar">
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="index.html">Logout</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </div>
-
-      <div class="sidenav" id="mySidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="ManageAccount.html">Manage Account</a>
-        <a href="LeaderBoard.html">Leaderboard</a>
-        <a href="LeaveReviews.html">Leave Reviews</a>
-        <a href="#">Logout</a>
-      </div>
-      <br>
-
     <center>
-        <div id = "page_heading">
+    <!--body-->   
+        <div id = "page_heading" style="margin-bottom: 50px;">
             Sign in to Parcs
         </div>  
 
@@ -58,7 +62,7 @@
         <p id="error-message" style="color: red;"></p>
     </form>
     
-    <div class = "under_text">
+    <div class = "under_text" style="margin-top: 20px;">
         <input type="checkbox" id="check">
         <span style='color: #001F3F;'>Remember me</span>    
     </div>
@@ -69,6 +73,18 @@
         <a href = "RegisterPage.html"style="color: #001F3F;" > Create one</a>
     </span>
     </div>
+        <!-- Footer section -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="footer-container">
+                            © 2024 Parcs.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 </center>
 
