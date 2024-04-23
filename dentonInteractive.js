@@ -12,9 +12,9 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 
 //creating park icon for marker
 const parkIcon = L.icon({
-    iconUrl: 'images/playground.png',
+    iconUrl: 'pin.png',
 
-    iconSize:     [60, 80], // size of the icon
+    iconSize:     [23.4, 30], // size of the icon
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
