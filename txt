@@ -1,0 +1,202 @@
+ 
+    <ul class="cards">
+        <li>
+          <a href="" class="card">
+            <img src="images/North_Lakes_Park.jpeg" class="" alt="image of North Lakes Park" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <div class="card__header-text">
+                  <h3 class="card__title">North-Lakes-Park</h3>            
+                </div>
+              </div>
+              <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+            </div>
+          </a>      
+        </li>
+
+        <li>
+            <a href="" class="card">
+              <img src="images/Eureka-park.jpeg" class="" alt="image of Eureka Park" />
+              <div class="card__overlay">
+                <div class="card__header">
+                  <div class="card__header-text">
+                    <h3 class="card__title">Eureka-Park</h3>            
+                  </div>
+                </div>
+                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+              </div>
+            </a>      
+          </li>
+
+          <li>
+            <a href="" class="card">
+              <img src="images/lakeForest_park.jpeg" class="" alt="image of Lake Forest Park" />
+              <div class="card__overlay">
+                <div class="card__header">
+                  <div class="card__header-text">
+                    <h3 class="card__title">Lake-Forest-Park</h3>            
+                  </div>
+                </div>
+                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+              </div>
+            </a>      
+          </li>
+
+          <li>
+            <a href="" class="card">
+              <img src="images/mckennaPark.jpeg" class="image of Mckenna Park" alt="image of Mckenna Park" />
+              <div class="card__overlay">
+                <div class="card__header">
+                  <div class="card__header-text">
+                    <h3 class="card__title">Mckenna-Park</h3>            
+                  </div>
+                </div>
+                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+              </div>
+            </a>      
+          </li>
+
+          <li>
+            <a href="" class="card">
+              <img src="images/Wheeler-ridge-park.jpeg" class="" alt="image of Wheeler Ridge Park" />
+              <div class="card__overlay">
+                <div class="card__header">
+                  <div class="card__header-text">
+                    <h3 class="card__title">Wheeler-Ridge-Park</h3>            
+                  </div>
+                </div>
+                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+              </div>
+            </a>      
+          </li>
+
+          <li>
+            <a href="" class="card">
+              <img src="images/Cross-timbers-park-south.jpeg" class="Cross Timbers Park South" alt=" image of Cross Timbers Park South" />
+              <div class="card__overlay">
+                <div class="card__header">
+                  <div class="card__header-text">
+                    <h3 class="card__title">Cross-Timbers-Park-South</h3>            
+                  </div>
+                </div>
+                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+              </div>
+            </a>      
+          </li>
+    </ul>
+
+
+
+.description-box {
+    flex: 1;
+    padding: 25px;
+    background-color: #fff;
+    border: 1px solid #001F3F;
+    height: 50%;
+    padding: 10px;
+    padding-top: 50px;
+  }
+  
+  .description-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .description-box p {
+    font-size: 16px;
+  }
+  
+  .row img{
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    display: block;
+  }
+  .image-description h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;      
+    border-radius: calc(var(--curve) * 1px);    
+    background-color: var(--surface-color);      
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card:hover .card__overlay {
+    transform: translateY(0);
+  }
+  
+  .card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border-radius: calc(var(--curve) * 1px) 0 0 0;    
+    background-color: var(--surface-color);
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card__arc {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;      
+    z-index: 1;
+  }
+  
+  .card__arc path {
+    fill: var(--surface-color);
+    d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+  }       
+  
+  .card:hover .card__header {
+    transform: translateY(0);
+  }
+  
+  .card__thumb {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;      
+    border-radius: 50%;      
+  }
+  
+  .card__title {
+    font-size: 1em;
+    margin: 0 0 .3em;
+    color: #6A515E;
+  }
+  
+  .card__tagline {
+    display: block;
+    margin: 1em 0;
+    font-family: "MockFlowFont";  
+    font-size: .8em; 
+    color: #D7BDCA;  
+  }
+  
+  .card__status {
+    font-size: .8em;
+    color: #D7BDCA;
+  }
+  
+  .card__description {
+    padding: 0 2em 2em;
+    margin: 0;
+    color: #D7BDCA;
+    font-family: "MockFlowFont";   
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
