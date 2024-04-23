@@ -17,7 +17,7 @@
 
 .logo span {
   font-size: 32px;
-  font-family: 'Gagarin';
+  font-family: "Bebas Neue", sans-serif;
   color: #001F3F;
 }
 
@@ -60,7 +60,7 @@ h1 {
   font-size: 36px;
   margin-bottom: 20px;
   float: left;
-  font-weight: 900;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .slogan {
@@ -95,7 +95,7 @@ h1 {
 
 .footer {
   background-color: #FAF9F8;
-  color: #fff;
+  color: lightgrey;
   padding: 20px 0;
   text-align: center;
   position: fixed;
