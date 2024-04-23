@@ -17,6 +17,7 @@
 
 .logo span {
   font-size: 32px;
+  font-family: 'Gagarin';
   color: #001F3F;
 }
 
@@ -109,11 +110,12 @@ h1 {
   src: url('Gagalin-Regular.otf');
 }
 
-*{
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-  }
+* {
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
   
 #unbold{
     font-family: "Montserrat", sans-serif;
