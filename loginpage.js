@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
       else{
         console.log("content loaded successfully");
         errorMessage.textContent = ""; // Clear any previous error messages
-        window.location.href = "dentonList.html";
+        window.location.href = "dentonInteractive.html";
       }
   });
 });
