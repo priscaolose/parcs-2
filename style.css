@@ -94,7 +94,7 @@ h1 {
 }
 
 .footer {
-  background-color: #FAF9F8;
+  background-color: rgb(250, 249, 248);
   color: lightgrey;
   padding: 20px 0;
   text-align: center;
@@ -230,7 +230,7 @@ a:active {
 
 .under_text{
   padding-top: 10px;
-  color: #001F3F;
+  color: rgb(0, 31, 63);
 }
 .zipcode_search{
     /* to use for username 
