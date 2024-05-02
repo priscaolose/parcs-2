@@ -7,50 +7,58 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div class="park-display">
-        <h1>North Lakes Park</h1>
-        <div class="content-container">
-            <div class="grid-container" id="listView">
-                <!-- Park items -->
-                <div class="row">
-                    <div class="grid-item">
-                        <a target="_blank" href="nlp.html">
-                            <img src="images/North_Lakes_Park.jpeg" alt="North Lakes Park">
-                        </a>
-                        <div class="desc">North Lakes Park</div>
+    <div class="header">
+        <a href="index.html">
+            <img width="200" height="200" src="images/Parcs.png" alt="Parcs Logo">
+        </a>
+        <div class="hamburger" onclick="toggleNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          
+      
+          <div class="sidenav" id="mySidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="ManageAccount.html">Manage Account</a>
+            <a href="LeaderBoard.html">Leaderboard</a>
+            <a href="ViewReviews.html">View Reviews</a>
+            <a href="#">Logout</a>
+          </div>
+          <br>
+    </div>
+    
+    <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="ManageAccount.html">Manage Account</a>
+        <a href="LeaderBoard.html">Leaderboard</a>
+        <a href="LeaveReviews.html">Leave Reviews</a>
+        <a href="#">Logout</a>
+    </div>
+        <div class="nlp">
+            <div class="park-container">
+                <h3>North Lakes Park</h3>
+                <p>North Lakes Park in Denton, TX, is a serene retreat with lakes, trails, and recreational amenities, perfect for families and outdoor enthusiasts seeking leisure and active fun in the heart of nature.</p>
+                <div class="container-section">
+                    <div class="hours">
+                        <p id="time">8am - 10pm</p>
+                        <p>Park hours</p>
                     </div>
-                    <div class="description-box">
-                        <h3>Park Features:</h3>
-                        <ul>
-                            <li>
-                                Lakes
-                            </li>
-                            <li>
-                                Pavilions
-                            </li>
-                            <li>
-                                Bleachers
-                            </li>
-                            <li>
-                                Basketball Court
-                            </li>
-                            <li>
-                                Drinking fountains
-                            </li>
-                            <li>
-                                Restrooms
-                            </li>
-                        </ul> 
-                            <h3>Ratings: </h3>
-                            <h3>Park Hours:</h3>
-                            <h3>Park Events: </h3>
-                            <a target="_blank" href="https://www.google.com/maps?q=North+Lakes+Park+Denton+TX"><h3>Get Directions:</a></h3>
+                    <div class="Directions">
+                        <a href="https://maps.app.goo.gl/FYKDPyQyQoxVmPHv5">Get Directions
+                            <img width="30" height="30" src="/images/park.mp4"/>
+                        </a>
+                    </div>
+                    <div class="events">
+                        <a href="#">Park Events</a>
+                    </div>
+                    <div class="Ratings">
+                        <p>Park Ratings</p>
                     </div>
                 </div>
             </div>
-            
         </div>
-    </div>
+        
     <script src="script.js"></script>
 </body>
 </html>

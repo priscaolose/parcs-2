@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/a3303f42a6.js" crossorigin="anonymous"></script> 
+    <title>ParcsLoginPage</title>
+    <meta charset="UTF-8">
+    <meta name="vxiewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="RegisterPage.js"></script>
+</head>
+
+<body>
+    <!--<button class="openbtn" onclick="openNav()">&#9776;</button>-->
+    <div class="header">
+        <div id="small_heading">
+            <a href="index.html"> Home</a>
+        </div>
+        <div class="hamburger" onclick="toggleNavigation()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+
+      <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="ManageAccount.html">Manage Account</a>
+        <a href="LeaderBoard.html">Leaderboard</a>
+        <a href="LeaveReviews.html">Leave Reviews</a>
+        <a href="#">Logout</a>
+      </div>
+      <br>
+
+    <center>
+        <div id = "page_heading">
+            Sign up for Parcs
+        </div>  
+     
+    <form id ="registerform">
+        <div>
+            <input type ="name"  class="input_field" placeholder="First name" id ="UFname">
+            <i class="fa-regular fa-user"></i>
+            <label class="required"></label>
+        </div>
+
+        <div>
+            <input type ="name"  class="input_field" placeholder="Last name" id ="ULname">
+            <i class="fa-regular fa-user"></i>
+            <label class="required"></label>
+        </div>
+
+        <div>
+            <input type ="email"  class="input_field" placeholder="Email" id ="UEmail">
+            <i class="fa-solid fa-envelope"></i>
+            <label class="required"></label>
+        </div>
+
+        <div >
+            <input required type="password" class="input_field" placeholder="Password" id ="Upassword"/>
+            <!--<i class="fa-solid fa-lock"></i> -->          
+            <i class="fa-solid fa-lock toggle_password" onclick="togglePasswordVisibility(this)"></i>
+            <label class="required"></label>
+        </div>
+
+        <div>
+            <input type="tel"  class = "input_field" placeholder="Phone Number" name = "uphonenumber" />
+            <i class="fa-solid fa-phone"></i>
+        </div>
+           <br>
+        <div class ="button"> 
+                <button type="submit" class = "btn">Create account</button>  
+        </div>
+        <p id="error-message" style="color: red;"></p>
+    </form>
+   <div class = "under_text">
+    Already have an account?
+    <a href = "loginpage2.html" style="color: #001F3F;" > Sign in</a>
+
+</div>
+
+
+</center>
+
+</body>
+</html>
+

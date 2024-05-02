@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extract Hashtags</title>
+</head>
+<body>
+    <div id="review">
+        My family and I had a fantastic day at the local #park yesterday. The sprawling greenery and picturesque scenery were breathtaking. The #playground equipment kept the kids entertained for hours, and the well-maintained walking trails were perfect for a leisurely stroll. We also enjoyed a delightful picnic in the shade of the towering trees. The park's amenities, including clean restrooms and ample seating areas, made our visit comfortable and enjoyable. Can't wait to return for another fun-filled day outdoors! #FamilyTime #NatureLovers #OutdoorFun
+    </div>
+    
+    <div id="hashtags">
+        <!-- Hashtags will be displayed here -->
+    </div>
+
+    <script>
+        function extractHashtags() {
+            // Get the text content of the review
+            var reviewText = document.getElementById("review").textContent;
+            
+            // Regular expression to find hashtags
+            var regex = /#[a-zA-Z0-9_]+/g;
+            
+            // Extract hashtags
+            var hashtags = reviewText.match(regex);
+            
+            // Display hashtags
+            var hashtagsContainer = document.getElementById("hashtags");
+            hashtagsContainer.innerHTML = ""; // Clear previous content
+            
+            if (hashtags !== null) {
+                // Create <a> tags for each hashtag
+                hashtags.forEach(function(tag) {
+                    var tagElement = document.createElement("a");
+                    tagElement.href = "#" + tag.substring(1); // Remove the '#' from the tag
+                    tagElement.textContent = tag;
+                    tagElement.classList.add("hashtag");
+                    hashtagsContainer.appendChild(tagElement);
+                    hashtagsContainer.appendChild(document.createTextNode(" "));
+                });
+            }
+        }
+        
+        // Call the function when the page loads
+        window.onload = extractHashtags;
+    </script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyC-1lP0bansXU1GBMMMkrIb8kk1oywCwHE",
+          authDomain: "parcsdb.firebaseapp.com",
+          projectId: "parcsdb",
+          storageBucket: "parcsdb.appspot.com",
+          messagingSenderId: "550534457926",
+          appId: "1:550534457926:web:6aea87fc25717a04767847",
+          measurementId: "G-KGE7PFW3BP"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+      <script type="module" src="firebase-init.js"></script>
+</body>
+</html>

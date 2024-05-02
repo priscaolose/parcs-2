@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parks in Denton, TX</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html">
+            <img width="180"  src="images/Parcs.png" alt="Parcs Logo">
+        </a>
+        <div class="hamburger" onclick="toggleNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          
+      
+          <div class="sidenav" id="mySidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="ManageAccount.html">Manage Account</a>
+            <a href="LeaderBoard.html">Leaderboard</a>
+            <a href="LeaveReviews.html">Leave Reviews</a>
+            <a href="#">Logout</a>
+          </div>
+          <br>
+    </div>
+    
+    <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="ManageAccount.html">Manage Account</a>
+        <a href="LeaderBoard.html">Leaderboard</a>
+        <a href="ViewReviews.html">View Reviews</a>
+        <a href="#">Logout</a>
+    </div>
+
+    <div id="parks-display">
+        <h3>View Parks</h3> 
+    </div>
+
+    <div class="switch-container">
+        <label class="switch">
+            <input type="checkbox" id="toggleCheckbox">
+            <span class="toggle-text">Map View
+                <img width="22" height="22" src="/images/playground.png"/>
+            </span>
+        </label>
+        <span id="pageIndicator"></span>
+    </div>
+
+
+    <div class="card-container">
+        <div class="row">
+            <div class="column">
+              <div class="card">
+                <a href="eureka.html">
+                    <img width="150" height="150" src="/images/Eureka_Park.jpeg"/>
+                </a>
+                <h4>Eureka Park</h4>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <a href="nlp.html">
+                    <img width="150" height="150" src="/images/North_Lakes_Park.jpeg"/>
+                </a>
+                <h4>North Lakes Park</h4>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                <a href="lakeForest.html">
+                    <img width="150" height="150" src="/images/lakeForest_park.jpeg"/>
+                </a>
+                <h4>Lake Forest Park</h4>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                <a href="mckenna.html">
+                    <img width="150" height="150" src="/images/mckennaPark.jpeg"/>
+                </a>
+                <h4>Mckenna Park</h4>
+              </div>
+            </div>
+    
+            <div class="column">
+                <div class="card">
+                    <a href="wheeler.html">
+                        <img width="150" height="150" src="images/Wheeler-ridge-park.jpeg"/>
+                    </a>
+                    <h4>Wheeler Ridge Park</h4>
+                </div>
+              </div>
+          </div>
+    </div>
+     
+    <script src="denton.js"></script>
+</body>
+</html>

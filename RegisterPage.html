@@ -1,95 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <script src="https://kit.fontawesome.com/a3303f42a6.js" crossorigin="anonymous"></script>
-    
-    <title>ParcsRegisterPage</title>
+    <script src="https://kit.fontawesome.com/a3303f42a6.js" crossorigin="anonymous"></script> 
+    <title>Register</title>
     <meta charset="UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="vxiewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="loginpage.js"></script>
+    <script src="RegisterPage.js"></script>
 </head>
 
 <body>
-    <div id = "small_heading">
-    <a href="index.html">Home</a>
-    </div>
+    <div class="container-fluid">
+        <!-- Header section -->
+        <div class="row header">
+            <div class="col">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/ParcsLogo.png" alt="Parcs Logo" height="30px" width="30px" style="margin-bottom: 10px;">
+                        <span style="font-weight: 500;">parcs</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col navbar-wrapper">
+                <nav class="navbar">
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="loginpage2.html">Login</a></li>
 
-    <!--<button class="openbtn" onclick="openNav()">&#9776;</button>-->
-
-    <div class="hamburger" onclick="toggleNav()">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
-      
-  
-      <div class="sidenav" id="mySidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="ManageAccount.html">Manage Account</a>
-        <a href="LeaderBoard.html">Leaderboard</a>
-        <a href="ViewReviews.html">View Reviews</a>
-        <a href="#">Logout</a>
-      </div>
-      <br>
-
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    <!--body-->
     <center>
+        <div id = "page_heading" style="margin-bottom: 50px;">
+            Sign up for Parcs
+        </div>  
+     
+    <form id ="registerform">
+       <div style="margin-left: 10px;">
+        <div>
+            <input type ="name"  class="input_field" placeholder="First name" id ="UFname">
+            <i class="fa-regular fa-user"></i>
+            <label class="required"></label>
+        </div>
 
-    <div id = "page_heading">
-        Sign up for Parcs
-    </div>  
+        <div>
+            <input type ="name"  class="input_field" placeholder="Last name" id ="ULname">
+            <i class="fa-regular fa-user"></i>
+            <label class="required"></label>
+        </div>
 
-    <div>
-        <input type ="text"  class = "input_field"  placeholder="First name" name = "uname"/>
-        <i class="fa-regular fa-user"></i>
-        <label class="required"></label>
-    </div>
-      <!--  <label class="required"></label> --> 
+        <div>
+            <input type ="email"  class="input_field" placeholder="Email" id ="UEmail">
+            <i class="fa-solid fa-envelope"></i>
+            <label class="required"></label>
+        </div>
 
-      <div >
-        <input type ="text" class = "input_field" placeholder= "Last name" name = "uname"/>
-        <i class="fa-regular fa-user"></i>
-        <label class="required"></label>
-    </div>
-      <!--  <label class="required"></label> --> 
-  
-    
-      <div >
-        <input type="email" class = "input_field" autocapatilize = "off"  autocorrect="off" spellcheck="false" placeholder="Email" name = "uemail"  />
-        <i class="fa-solid fa-envelope"></i>
-        <label class="required"></label>
+        <div >
+            <input required type="password" class="input_field" placeholder="Password" id ="Upassword"/>
+            <!--<i class="fa-solid fa-lock"></i> -->          
+            <i class="fa-solid fa-lock toggle_password" onclick="togglePasswordVisibility(this)"></i>
+            <label class="required"></label>
+        </div>
+       </div> 
+           <br>
+        <div class ="button"> 
+                <button type="submit" class = "btn">Create account</button>  
 
-        <!--  <label class="required"></label> --> 
-    </div>
-
-    <div >
-        <input type="password" class = "input_field"  placeholder="Password" name = "upassword"/>
-        <i class="fa-solid fa-lock toggle_password" onclick="togglePasswordVisibility(this)"></i>
-        <label class="required"></label>
-
-    </div>
-
-    <div>
-        <input type="tel"  class = "input_field" placeholder="Phone Number" name = "uphonenumber" />
-        <i class="fa-solid fa-phone"></i>
-
-    </div>
-       
-    <br>
-  <div class ="button"> 
-    <a href="ParksViewPage.html" target="_blank">
-        <button type="Login" class = "btn">Create Account</button>
-    </a>
-
-  </div>
-
-  <div class = "under_text">
+        </div>
+        <p id="error-message" style="color: red;"></p>
+    </form>
+   <div class = "under_text">
     Already have an account?
-    <a href = "loginpage2.html"> Sign in</a>
+    <a href = "loginpage2.html" style="color: #001F3F; text-decoration: underline;" > Sign in</a>
+
 </div>
 
 
 </center>
-
+</div>
+<!-- Footer section -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="footer-container">
+                    © 2024 Parcs.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
-
 </html>
+
