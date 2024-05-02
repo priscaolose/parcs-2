@@ -630,7 +630,7 @@ input:checked + .slider:before {
 .park-container {
   position: absolute;
   right: 0;
-  margin: 20px;
+  
   max-width: 300px;
   padding: 16px;
   background-color: white;
@@ -644,10 +644,10 @@ input:checked + .slider:before {
 
 .park-container p{
   padding-top:10px ;
-  font-size: 12px;
+  font-size: 14px;
   font-family: "Montserrat", sans-serif;
   color:#001F3F;
-  
+  font-weight:400;
 }
 
 .hours, .Directions, .events, .Ratings {
@@ -671,7 +671,7 @@ input:checked + .slider:before {
 }
 
 .container-section p{
-  padding-top:10px ;
+  padding-top:0px ;
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
   color:#001F3F;
