@@ -2,7 +2,7 @@
 /* Header Styles */
 .header {
   background-color: #FAF9F8;
-  padding: 20px 50px 0 50px; 
+  padding: 20px 50px 0 20px; 
   margin-bottom: 50px;
 }
 
@@ -42,7 +42,6 @@
 .body-content {
   padding: 50px 0;
   text-align: center;
-  display: flex;
   justify-content: center; 
   align-items: center; 
   background-color: #FAF9F8;
@@ -618,7 +617,6 @@ input:checked + .slider:before {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  margin: 100px;
 }
 
 .park-container {
@@ -693,7 +691,6 @@ input:checked + .slider:before {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  margin: 100px;
 }
 .wheeler{
   background-image: url("images/Wheeler-ridge-park.jpeg");
@@ -702,7 +699,6 @@ input:checked + .slider:before {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  margin: 100px;
 }
 .mckenna{
   background-image: url("images/mckennaPark.jpeg");
@@ -711,7 +707,6 @@ input:checked + .slider:before {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  margin: 100px;
 }
 
 
@@ -850,3 +845,4 @@ margin: 10px 0px 0px 0px;}
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   z-index: 9999;
 }
+

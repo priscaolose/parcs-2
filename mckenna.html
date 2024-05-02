@@ -3,38 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>North Lakes Park</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Parcs</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="header">
-        <a href="index.html">
-            <img width="200" height="200" src="images/Parcs.png" alt="Parcs Logo">
-        </a>
-        <div class="hamburger" onclick="toggleNav()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-          </div>
-          
-      
-          <div class="sidenav" id="mySidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="ManageAccount.html">Manage Account</a>
-            <a href="LeaderBoard.html">Leaderboard</a>
-            <a href="LeaveReviews.html">Leave Reviews</a>
-            <a href="#">Logout</a>
-          </div>
-          <br>
-    </div>
-    
-    <div class="sidenav" id="mySidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="ManageAccount.html">Manage Account</a>
-        <a href="LeaderBoard.html">Leaderboard</a>
-        <a href="ViewReviews.html">View Reviews</a>
-        <a href="#">Logout</a>
-    </div>
+    <div class="container-fluid">
+        <!-- Header section -->
+        <div class="row header">
+            <div class="col">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/ParcsLogo.png" alt="Parcs Logo" height="30px" width="30px" style="margin-bottom: 10px;">
+                        <span style="font-weight: 500;">parcs</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col navbar-wrapper">
+                <nav class="navbar">
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="loginpage2.html">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Body content section -->
         <div class="mckenna">
             <div class="park-container">
                 <h3>Mckenna Park</h3>
@@ -58,7 +55,20 @@
                 </div>
             </div>
         </div>
-        
-    <script src="script.js"></script>
+    </div>
+
+    <!-- Footer section -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="footer-container">
+                        © 2024 Parcs.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="script.js"></script>
 </html>
