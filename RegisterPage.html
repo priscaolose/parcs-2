@@ -36,50 +36,50 @@
         </div>
     <!--body-->
     <center>
-        <div id = "page_heading" style="margin-bottom: 50px;">
+        <div id="page_heading" style="margin-bottom: 50px;">
             Sign up for Parcs
         </div>  
      
-    <form id ="registerform">
+    <form id="registerform">
        <div style="margin-left: 10px;">
         <div>
-            <input type ="name"  class="input_field" placeholder="First name" id ="UFname">
+            <label for="UFname">First Name</label>
+            <input type="text" class="input_field" placeholder="First name" id="UFname">
             <i class="fa-regular fa-user"></i>
-            <label class="required"></label>
+            <label class="required">Required</label>
         </div>
 
         <div>
-            <input type ="name"  class="input_field" placeholder="Last name" id ="ULname">
+            <label for="ULname">Last Name</label>
+            <input type="text" class="input_field" placeholder="Last name" id="ULname">
             <i class="fa-regular fa-user"></i>
-            <label class="required"></label>
+            <label class="required">Required</label>
         </div>
 
         <div>
-            <input type ="email"  class="input_field" placeholder="Email" id ="UEmail">
+            <label for="UEmail">Email</label>
+            <input type="email" class="input_field" placeholder="Email" id="UEmail">
             <i class="fa-solid fa-envelope"></i>
-            <label class="required"></label>
+            <label class="required">Required</label>
         </div>
 
-        <div >
-            <input required type="password" class="input_field" placeholder="Password" id ="Upassword"/>
-            <!--<i class="fa-solid fa-lock"></i> -->          
+        <div>
+            <label for="Upassword">Password</label>
+            <input required type="password" class="input_field" placeholder="Password" id="Upassword"/>
             <i class="fa-solid fa-lock toggle_password" onclick="togglePasswordVisibility(this)"></i>
-            <label class="required"></label>
+            <label class="required">Required</label>
         </div>
        </div> 
            <br>
-        <div class ="button"> 
-                <button type="submit" class = "btn">Create account</button>  
-
+        <div class="button"> 
+            <button type="submit" class="btn">Create account</button>  
         </div>
         <p id="error-message" style="color: red;"></p>
     </form>
-   <div class = "under_text">
+   <div class="under_text">
     Already have an account?
-    <a href = "loginpage2.html" style="color: #001F3F; text-decoration: underline;" > Sign in</a>
-
+    <a href="loginpage2.html" style="color: #001F3F; text-decoration: underline;" > Sign in</a>
 </div>
-
 
 </center>
 </div>
@@ -97,4 +97,3 @@
 </div>
 </body>
 </html>
-
