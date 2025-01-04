@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <script src="https://kit.fontawesome.com/a3303f42a6.js" crossorigin="anonymous"></script> 
+    <script src="https://kit.fontawesome.com/a3303f42a6.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In To Parcs</title>
     <meta charset="UTF-8">
@@ -10,6 +10,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="loginpage.js"></script>
+    <style>
+        /* Add CSS styles for improved contrast here */
+        .btn {
+            color: #fff; /* Set text color to white */
+            background-color: #007bff; /* Set background color */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0056b3; /* Darken background color on hover */
+        }
+    </style>
 </head>
 
 <body>
@@ -34,63 +49,50 @@
                 </nav>
             </div>
         </div>
+    </div>
     <center>
-    <!--body-->   
-        <div id = "page_heading" style="margin-bottom: 50px;">
+        <!--body-->
+        <div id="page_heading" style="margin-bottom: 50px;">
             Sign in to Parcs
-        </div>  
-
-     
-    <form id ="practiceform">
-        <div>
-            <input type ="email"  class="input_field" placeholder="Username" id ="Uname">
-            <i class="fa-regular fa-user"></i>
-        </div>
-        <div >
-            <input required type="password" class="input_field" placeholder="Password" id ="Upassword"/>
-            <!--<i class="fa-solid fa-lock"></i> -->          
-            <i class="fa-solid fa-lock toggle_password" onclick="togglePasswordVisibility(this)"></i>
         </div>
 
-        <br>
-     
-        <div class ="button"> 
-                <button type="submit" class = "btn">Log in</button>  
+        <form id="practiceform">
+            <div>
+                <label for="Uname">Username</label>
+                <input type="email" class="input_field" placeholder="Username" id="Uname">
+                <i class="fa-regular fa-user"></i>
+            </div>
+            <div>
+                <label for="Upassword">Password</label>
+                <input required type="password" class="input_field" placeholder="Password" id="Upassword" />
+                <i class="fa-solid fa-lock toggle_password" onclick="togglePasswordVisibility(this)"></i>
+            </div>
+
+            <br>
+
+            <div class="button">
+                <button type="submit" class="btn">Log in</button>
+            </div>
+            <p id="error-message" style="color: red;"></p>
+
+        </form>
+
+        <div class="under_text">
+            <input type="checkbox" id="check">
+            <label for="check" style='color: #001F3F;'>Remember me</label>
+            <br>
+            <span style='color: #001F3F'>
+                Do not have an account?
+                <a href="RegisterPage.html" style="color: #001F3F; text-decoration: underline;"> Create one</a>
+            </span>
         </div>
-        <p id="error-message" style="color: red;"></p>
 
-    </form>
-    
-    <div class = "under_text">
-        <input type="checkbox" id="check">
-        <span style='color: #001F3F;'>Remember me</span>   
-        <br>
-        <span style='color: #001F3F'>
-            Do not have an account?
-            <a href = "RegisterPage.html"style="color: #001F3F; text-decoration: underline;"  > Create one</a>
-        </span> 
-    </div>
+        <div class="under_text">
 
-    <div class = "under_text">
-    
-    </div>
-  
-</center>
+        </div>
+
+    </center>
 
 </body>
+
 </html>
-
-
-
-<!-- Footer section -->
-<div class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="footer-container">
-                    © 2024 Parcs.
-                </div>
-            </div>
-        </div>
-    </div>
-</div>

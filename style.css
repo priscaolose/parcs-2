@@ -1,9 +1,121 @@
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
 
 /* Header Styles */
 .header {
-  background-color: #FAF9F8;
+  background-color: white;
   padding: 20px 50px 0 20px; 
-  margin-bottom: 50px;
+  
+}
+.rock-3d-regular {
+  font-family: "Rock 3D", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .logo {
@@ -47,35 +159,77 @@
 
 }
 /* Body Content Styles */
-.body-content {
+body {
+  margin: 0;
+  padding: 0;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+}
+.body-container {
+  
+  /*]]background-color: #FAF9F8;*/
+  background-color: white;
+  height: auto;
+  width: auto;
+  padding-bottom: 80px;
+
+}
+
+
+.body-container h1{
   padding: 50px 0;
   text-align: center;
   justify-content: center; 
   align-items: center; 
-  background-color: #FAF9F8;
+  color: #001F3F;
+
+}
+.about-paragraph{
+  column-count: 2;
 }
 
-#center_img {
-  max-width: 100%;
+.about-paragraph p{
+  font-size: 20px;
+  color: #001F3F;
+  margin: 0;
+  padding: 0;
+  float: left;
+  justify-items: left;
+}
+.about-paragraph img{
   height: auto;
-  margin-right: 30px; 
-  width: 500px;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.about-paragraph a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4E901E;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  align-items: center;
+  height: auto;
+  width: 300px;
+  text-align: center;
 }
 
 h1 {
-  margin-top: 150px;
-  font-size: 36px;
-  margin-bottom: 20px;
-  float: left;
+
+  font-size: 50px;
   font-family: "Josefin Sans", sans-serif;
 }
 
 .slogan {
   font-size: 24px;
-  color: #666;
+  color: white;
   margin-bottom: 30px;
-  text-align: left; 
-  padding-top: 220px;
+  text-align: center; 
   padding-bottom: 10px;
   font-style: italic;
 }
@@ -111,7 +265,10 @@ h1 {
   width: 100%;
 }
 
-
+.footer p{
+  color: #001F3F;
+  font-size: 12;
+}
 @font-face {
   font-family: 'Gagarin';
   src: url('Gagalin-Regular.otf');
@@ -671,7 +828,7 @@ input:checked + .slider:before {
 }
 
 .container-section p{
-  padding-top:0px ;
+  padding-top:10px ;
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
   color:#001F3F;
