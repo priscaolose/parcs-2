@@ -6,30 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In To Parcs</title>
     <meta charset="UTF-8">
-    <meta name="vxiewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="loginpage.js"></script>
-    <style>
-        /* Add CSS styles for improved contrast here */
-        .btn {
-            color: #fff; /* Set text color to white */
-            background-color: #007bff; /* Set background color */
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+    <script type="module" src="login.js"></script>
 
-        .btn:hover {
-            background-color: #0056b3; /* Darken background color on hover */
-        }
-    </style>
+
 </head>
 
 <body>
     <div class="container-fluid">
-        <!-- Header section -->
         <div class="row header">
             <div class="col">
                 <div class="logo">
@@ -50,21 +36,21 @@
             </div>
         </div>
     </div>
+
     <center>
-        <!--body-->
         <div id="page_heading" style="margin-bottom: 50px;">
             Sign in to Parcs
         </div>
 
-        <form id="practiceform">
+        <form id="loginform">
             <div>
-                <label for="Uname">Username</label>
-                <input type="email" class="input_field" placeholder="Username" id="Uname">
+                <label for="email">Email</label>
+                <input type="email" class="input_field" placeholder="Email" id="email">
                 <i class="fa-regular fa-user"></i>
             </div>
             <div>
-                <label for="Upassword">Password</label>
-                <input required type="password" class="input_field" placeholder="Password" id="Upassword" />
+                <label for="password">Password</label>
+                <input required type="password" class="input_field" placeholder="Password" id="password" />
                 <i class="fa-solid fa-lock toggle_password" onclick="togglePasswordVisibility(this)"></i>
             </div>
 
@@ -74,7 +60,6 @@
                 <button type="submit" class="btn">Log in</button>
             </div>
             <p id="error-message" style="color: red;"></p>
-
         </form>
 
         <div class="under_text">
@@ -86,13 +71,7 @@
                 <a href="RegisterPage.html" style="color: #001F3F; text-decoration: underline;"> Create one</a>
             </span>
         </div>
-
-        <div class="under_text">
-
-        </div>
-
     </center>
 
 </body>
-
 </html>
