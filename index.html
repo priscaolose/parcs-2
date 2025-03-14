@@ -23,17 +23,17 @@
                 <nav class="navbar">
                     <ul class="nav-menu">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="About.html">About</a></li>
+                        <li><a href="#about">About</a></li>
                         <li><a href="loginpage2.html">Login</a></li>
                     </ul>
                 </nav>
         </div>
 
-        <!-- Body content section -->
-        <div class="body-container">
-            <div>
+    <!-- Body content section -->
+    <div class="body-container">
+        <div>
             
-                <div style="position: relative; width: auto; height: 0; padding-top: 56.2225%;
+            <div style="position: relative; width: auto; height: 0; padding-top: 56.2225%;
                 padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1px; margin-bottom: 0.9em; overflow: hidden;
                  will-change: transform;">
                 <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
@@ -41,7 +41,7 @@
                 </iframe>
             </div>
             <div class="container">
-                <div class="boyonswing">
+                <div id= "about" class="about">
                     <!-- Content of the section goes here -->
                     <h1>We're here to make<br>parks accessible for everyone</h1>
                     <div class="about-paragraph">
@@ -50,18 +50,16 @@
                             You can find parks that are wheelchair accessible, have 
                             accessible restrooms, and more. We believe that everyone
                             should have the opportunity to enjoy the outdoors.
-                            <br>
-                            <br>
-                            <br>
-                            <a href="loginpage2.html" class="btn btn-primary">Find Parks</a>
                         </p>
-                        <img src="images/parcs-18.png" alt="image of blind man with guide dog">
                     </div>
-                   
+                        <div class="about-btn-container">
+                            <a href="loginpage2.html" class="btn">Find Parks</a>
+                            <img src="images/parcs-18.png" alt="imageof blind man with guide dog">
+                        </div>
+                    
                 </div>
-            </div>
             
-        </div>
+            </div>
     </div>
     <div class="footer">
         <div class="container">
@@ -75,28 +73,5 @@
         </div>
     </div>
     
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-          apiKey: "AIzaSyD6hUmfzZ4lwt9BNud6XrZJkzoSwey3iPc",
-          authDomain: "parcs-b7ed0.firebaseapp.com",
-          projectId: "parcs-b7ed0",
-          storageBucket: "parcs-b7ed0.firebasestorage.app",
-          messagingSenderId: "978349964117",
-          appId: "1:978349964117:web:0e595228fc7870afd88ddc",
-          measurementId: "G-Q2PMDDBBVP"
-        };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-      </script>
 </body>
 </html>

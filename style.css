@@ -186,8 +186,30 @@ body {
 
 }
 .about-paragraph{
-  column-count: 2;
+  column-count: 1;
 }
+
+
+.about-btn-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.about-btn-container a{
+  text-decoration: none;
+  background-color: #001F3F; 
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.about-btn-container img{
+  max-width: auto; 
+  height: auto;
+}
+
 
 .about-paragraph p{
   font-size: 20px;
