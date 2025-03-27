@@ -8,99 +8,116 @@
 </head>
 
 <body>
-    <div class="header">
-        <a href="index.html">
-            <img width="180"  src="images/Parcs.png" alt="Parcs Logo">
-        </a>
-        <div class="hamburger" onclick="toggleNav()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-          </div>
-          
-      
-          <div class="sidenav" id="mySidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="ManageAccount.html">Manage Account</a>
-            <a href="LeaderBoard.html">Leaderboard</a>
-            <a href="LeaveReviews.html">Leave Reviews</a>
-            <a href="#">Logout</a>
-          </div>
-          <br>
+  <div class="container-fluid">
+    <!-- Header section -->
+  <div class="row header">
+    <div class="col">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/ParcsLogo.png" alt="Parcs Logo" height="30px" width="30px">
+            </a>
+        </div>
     </div>
-    
-    <div class="sidenav" id="mySidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="ManageAccount.html">Manage Account</a>
-        <a href="LeaderBoard.html">Leaderboard</a>
-        <a href="ViewReviews.html">View Reviews</a>
-        <a href="#">Logout</a>
-    </div>
+    <nav class="navbar">
+      <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <!-- <li><a href="loginpage2.html">Login</a></li> -->
+          <li><a href="dentonList.html">Denton Parks</a></li>
+          <li><a href="ManageAccount.html">Manage Account</a></li>
+          <!-- <li><a href="LeaderBoard.html">Leaderboard</a></li> -->
+          <!-- <li><a href="LeaveReviews.html">Leave Reviews</a></li> -->
+          <li><a href="#">Logout</a></li>
+      </ul>
+  </nav>
+    <!-- <div class="sidenav" id="mySidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="ManageAccount.html">Manage Account</a>
+      <a href="LeaderBoard.html">Leaderboard</a>
+      <a href="LeaveReviews.html">Leave Reviews</a>
+      <a href="#">Logout</a>
+    </div> -->
+  </div>
 
     <div id="parks-display">
-        <h3>View Parks</h3> 
+        <h2>View Parks</h2> 
     </div>
 
     <div class="switch-container">
-        <label class="switch">
-            <input type="checkbox" id="toggleCheckbox">
-            <span class="toggle-text">Map View
-                <img width="22" height="22" src="/images/playground.png"/>
-            </span>
-        </label>
+      <button id="toggleButton" onclick="window.location.href='dentonInteractive.html'">
+        <span class="toggle-text">Map View
+            <img src="/images/playground.png"/>
+        </span>
+    </button>
         <span id="pageIndicator"></span>
     </div>
 
-
-    <div class="card-container">
-        <div class="row">
-            <div class="column">
-              <div class="card">
-                <a href="eureka.html">
-                    <img width="150" height="150" src="/images/Eureka_Park.jpeg"/>
-                </a>
-                <h4>Eureka Park</h4>
-              </div>
-            </div>
-          
-            <div class="column">
-              <div class="card">
-                <a href="nlp.html">
-                    <img width="150" height="150" src="/images/North_Lakes_Park.jpeg"/>
-                </a>
-                <h4>North Lakes Park</h4>
-              </div>
-            </div>
-            
-            <div class="column">
-              <div class="card">
-                <a href="lakeForest.html">
-                    <img width="150" height="150" src="/images/lakeForest_park.jpeg"/>
-                </a>
-                <h4>Lake Forest Park</h4>
-              </div>
-            </div>
-            
-            <div class="column">
-              <div class="card">
-                <a href="mckenna.html">
-                    <img width="150" height="150" src="/images/mckennaPark.jpeg"/>
-                </a>
-                <h4>Mckenna Park</h4>
-              </div>
-            </div>
+  <div class="map-container">
+      <div class="gallery">
+        <a target="_blank" href="img_5terre.jpg">
+          <img src="images/Eureka_Park.jpeg" alt="Eureka Park">
+        </a>
+        <div class="desc">Eureka Park</div>
+      </div>
     
-            <div class="column">
-                <div class="card">
-                    <a href="wheeler.html">
-                        <img width="150" height="150" src="images/Wheeler-ridge-park.jpeg"/>
-                    </a>
-                    <h4>Wheeler Ridge Park</h4>
-                </div>
-              </div>
-          </div>
-    </div>
-     
+      <div class="gallery">
+        <a target="_blank" href="img_forest.jpg">
+          <img src="images/Avondale-Park.jpeg" alt="Avondale Park">
+        </a>
+        <div class="desc">Avondale Park</div>
+      </div>
+    
+      <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+          <img src="images/fredMoore_Park.jpeg" alt="Fred Moore Park">
+        </a>
+        <div class="desc">Fred Moore Park</div>
+      </div>
+    
+      <div class="gallery">
+        <a target="_blank" href="img_mountains.jpg">
+          <img src="images/North_Lakes_Park.jpeg" alt="North Lakes Park">
+        </a>
+        <div class="desc">North Lakes Park</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="img_5terre.jpg">
+          <img src="images/lakeForest_park.jpeg" alt="Lake Forest Park">
+        </a>
+        <div class="desc">Lake Forest Park</div>
+      </div>
+    
+      <div class="gallery">
+        <a target="_blank" href="img_forest.jpg">
+          <img src="images/Cross-timbers-park-south.jpeg" alt="Cross Timbers Park">
+        </a>
+        <div class="desc">Cross Timbers Park</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="img_5terre.jpg">
+          <img src="images/mckennaPark.jpeg" alt="Mckenna Park">
+        </a>
+        <div class="desc">Mckenna Park</div>
+      </div>
+    
+      <div class="gallery">
+        <a target="_blank" href="img_forest.jpg">
+          <img src="images/Quakertown_Park.jpeg" alt="Quakertown Park">
+        </a>
+        <div class="desc">Quakertown Park</div>
+      </div>
+    
+  </div>
+  </div>
+  <div class="footer">
+            &copy; Parcs 2025 | All Rights Reserved
+  </div>
+</div>
+    
     <script src="denton.js"></script>
 </body>
 </html>
+
+

@@ -1,3 +1,54 @@
+<div class="card-container">
+        <div class="row">
+            <div class="column">
+              <div class="card">
+                <a href="eureka.html">
+                    <img width="150" height="150" src="/images/Eureka_Park.jpeg"/>
+                </a>
+                <h4>Eureka Park</h4>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <a href="nlp.html">
+                    <img width="150" height="150" src="/images/North_Lakes_Park.jpeg"/>
+                </a>
+                <h4>North Lakes Park</h4>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                <a href="lakeForest.html">
+                    <img width="150" height="150" src="/images/lakeForest_park.jpeg"/>
+                </a>
+                <h4>Lake Forest Park</h4>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                <a href="mckenna.html">
+                    <img width="150" height="150" src="/images/mckennaPark.jpeg"/>
+                </a>
+                <h4>Mckenna Park</h4>
+              </div>
+            </div>
+    
+            <div class="column">
+                <div class="card">
+                    <a href="wheeler.html">
+                        <img width="150" height="150" src="images/Wheeler-ridge-park.jpeg"/>
+                    </a>
+                    <h4>Wheeler Ridge Park</h4>
+                </div>
+              </div>
+          </div>
+    </div>
+     
+
+
 <body>
        <div class="container">
             <div class="header">

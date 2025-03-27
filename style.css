@@ -198,9 +198,13 @@ body {
   padding-top: 20px;
 }
 
+.about-btn-container a:hover{
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
 .about-btn-container a{
   text-decoration: none;
-  background-color: #001F3F; 
+  background-color: #16A085;
   padding: 10px 20px;
   border-radius: 5px;
 }
@@ -277,19 +281,69 @@ h1 {
 }
 
 .footer {
-  background-color: rgb(250, 249, 248);
-  color: lightgrey;
-  padding: 20px 0;
+  background-color: #001F3F;
+  color: #ecf0f1;
+  padding: 15px 0;
   text-align: center;
-  position: fixed;
-  left: 0;
+  position: relative;
   bottom: 0;
   width: 100%;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
 }
 
-.footer p{
-  color: #001F3F;
-  font-size: 12;
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #2980b9;
+}
+.copyright{
+  align-content: center;
+}
+.social-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.social-icons a {
+  color: #ecf0f1;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #3498db;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .footer-links, .social-icons {
+      margin-top: 15px;
+  }
 }
 @font-face {
   font-family: 'Gagarin';
@@ -732,8 +786,8 @@ input:checked + .slider:before {
 /* Float four columns side by side */
 .column {
   float: left;
-  width: 33.33%;
-  padding: 50px;
+  width: 25%;
+  padding: 10px;
   text-align: center;
   cursor: pointer;
   color: white;
@@ -792,9 +846,9 @@ input:checked + .slider:before {
 #parks-display h3{
   color:#001F3F;
   text-align: center;
-  font-size: 80px;
+  font-size: 30px;
   margin: 0px;
-  padding: 5px;
+  padding-top: 50px;
 }
 
 .nlp{
@@ -1075,4 +1129,155 @@ margin: 10px 0px 0px 0px;}
 }
 .single-line {
   white-space: nowrap;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #001F3F;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  color: #3498db;
+}
+
+/* Parks Display Section */
+#parks-display {
+  text-align: center;
+  padding: 20px;
+  margin-top: 10px;
+  background-color: #faf9f9;
+  color: white;
+  text-align: center;
+  align-items: center;
+}
+
+#parks-display h2 {
+  color: #001F3F;
+  font-size: 25px;
+  margin: 0;
+  padding-top: 0px;
+  font-weight: bolder;
+}
+
+/* Toggle Switch Container */
+.switch-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+#toggleButton {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 15px;
+  background-color: #16A085;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#toggleButton:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+}
+
+#toggleButton:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.toggle-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+
+.toggle-text img {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+#pageIndicator {
+  color: #7f8c8d;
+  font-size: 14px;
+}
+
+* Gallery Styles */
+.map-container {
+    padding: 20px;
+}
+
+.container-fluid {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.gallery {
+    margin: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.gallery:hover {
+    transform: scale(1.05);
+}
+
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Grid Layout for Parks */
+.map-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
 }

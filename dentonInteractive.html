@@ -3,56 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Parks in Denton, TX - Interactive View</title>
-    <meta name="vxiewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
-    <style>
-        body{
-            overflow: hidden;
-        }
-        .footer {
-            position: absolute;
-        }
-        
-    </style>
 </head>
 <body>
-    <div class="container-fluid" style="z-index: 9999;">
+    <div class="container-fluid">
         <!-- Header section -->
-        <div class="row header">
-            <div class="col">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/ParcsLogo.png" alt="Parcs Logo" height="30px" width="30px" style="margin-bottom: 10px;">
-                        <span style="font-weight: 500;">parcs</span>
-                    </a>
-                </div>
-            </div>
-            <div class="col navbar-wrapper">
-                <nav class="navbar">
-                    <ul class="nav-menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="About.html">About</a></li>
-                        <li class ="dropdown">
-                            <a href="javascript:void(0)" >
-                                <img src="images/avatar.png" alt="Avatar" height="30px" width="30px" style="margin-bottom: 10px;">
-                                <div class="dropdown-content">
-                                    <a href="ManageAccount.html" class="single-line">Manage Account</a>
-                                    <a href="index.html">Logout</a>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+      <div class="row header">
+        <div class="col">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/ParcsLogo.png" alt="Parcs Logo" height="30px" width="30px">
+                </a>
             </div>
         </div>
+        <nav class="navbar">
+          <ul class="nav-menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <!-- <li><a href="loginpage2.html">Login</a></li> -->
+              <li><a href="dentonList.html">Denton Parks</a></li>
+              <li><a href="ManageAccount.html">Manage Account</a></li>
+              <!-- <li><a href="LeaderBoard.html">Leaderboard</a></li> -->
+              <!-- <li><a href="LeaveReviews.html">Leave Reviews</a></li> -->
+              <li><a href="#">Logout</a></li>
+          </ul>
+      </nav>
 
     <div id="map" style="flex: 1; height: calc(100vh - 90px);  bottom: 50px; width: 150%; right: 20px; "></div>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="dentonInteractive.js"></script>
 
-    </div>
+      </div>
         <!-- Footer section -->
         <div class="footer" style="z-index: 999;">
             <div class="container">
