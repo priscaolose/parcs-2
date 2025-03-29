@@ -10,6 +10,15 @@ const firebaseConfig = {
     appId: "1:978349964117:web:0e595228fc7870afd88ddc",
     measurementId: "G-Q2PMDDBBVP"
 };
+function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
+function isValidPassword(password) {
+    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    return passwordRegex.test(password);
+}
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
@@ -20,9 +29,23 @@ document.addEventListener("DOMContentLoaded", () => {
     form.addEventListener("submit", (e) => {
         e.preventDefault();
 
-        const email = document.getElementById("email").value;  // Fixed email field ID
-        const password = document.getElementById("password").value;  // Fixed password field ID
+        const email = document.getElementById("email").value;  
+        const password = document.getElementById("password").value;  
+        console.log("Email: " + email + " Password: " + password)
         const errorMessage = document.getElementById("error-message");
+        errorMessage.textContent = "";
+
+        if (!email) {
+            errorMessage.textContent = "Email is required.";
+        } else if (!isValidEmail(email)) {
+            errorMessage.textContent = "Invalid email address.";
+        } else if (!password) {
+            errorMessage.textContent = "Password is required.";
+        } else if (!isValidPassword(password)) {
+            errorMessage.textContent = "Enter a valid password.";
+        } else {
+            errorMessage.textContent = ""; 
+        }
 
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
@@ -34,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
             })
             .catch((error) => {
                 console.error("Login error:", error.message);
-                errorMessage.textContent = error.message;  // Show error message
+                // errorMessage.textContent = error.message;  // Show error message
             });
     });
 });

@@ -5,16 +5,15 @@
     <script src="https://kit.fontawesome.com/a3303f42a6.js" crossorigin="anonymous"></script>
     <title>Register</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- You had a typo here ("vxiewport") -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script defer type="module" src="backend/register.js"></script> <!-- Use 'defer' for proper loading order -->
+    <link rel="stylesheet" href="StylingSheets/registration.css">
+    <script defer type="module" src="backend/register.js"></script>
 </head>
-
 <body>
-    <div class="container-fluid">
+    <div>
         <!-- Header section -->
-        <div class="row header">
+        <div class="header">
             <div class="col">
                 <div class="logo">
                     <a href="index.html">
@@ -26,9 +25,9 @@
             <div class="col navbar-wrapper">
                 <nav class="navbar">
                     <ul class="nav-menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="About.html">About</a></li>
-                        <li><a href="loginpage2.html">Login</a></li>
+                        <li><a id="home-link" href="index.html">Home</a></li>
+                        <li><a id="about-link" href="About.html">About</a></li>
+                        <li><a id="login-link" href="loginpage2.html">Login</a></li>
                     </ul>
                 </nav>
             </div>
@@ -36,66 +35,54 @@
 
         <!-- Body section -->
         <center>
-            <div id="page_heading" style="margin-bottom: 50px;">
-                Sign up for Parcs
-            </div>  
-
             <form id="registerform">
-                <div style="margin-left: 10px;">
-                    <div>
-                        <label for="UFname">First Name</label>
-                        <input type="text" class="input_field" placeholder="First name" id="UFname">
-                        <i class="fa-regular fa-user"></i>
-                        <label class="required">Required</label>
+                <div id="page_heading">
+                    Create an Account With Parcs
+                </div>  
+                <div class="signin-prompt">
+                   Let's Get Started
+                </div>
+                <div class = "inputField">
+                        <div class="input-container">
+                            <input type="text" class="input_field" placeholder="First name" id="UFname">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                </div>
+
+                    <div class = "inputField">
+                        <div class="input-container">
+                            <input type="text" class="input_field" placeholder="Last name" id="ULname">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
                     </div>
 
-                    <div>
-                        <label for="ULname">Last Name</label>
-                        <input type="text" class="input_field" placeholder="Last name" id="ULname">
-                        <i class="fa-regular fa-user"></i>
-                        <label class="required">Required</label>
+                    <div class = "inputField">
+                        <div class="input-container">
+                            <input type="email" class="input_field" placeholder="Email" id="UEmail">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
                     </div>
 
-                    <div>
-                        <label for="UEmail">Email</label>
-                        <input type="email" class="input_field" placeholder="Email" id="UEmail">
-                        <i class="fa-solid fa-envelope"></i>
-                        <label class="required">Required</label>
+                    <div class = "inputField">
+                        <div class="input-container">
+                            <input  type="password" class="input_field" placeholder="Password" id="Upassword"/>
+                            <i class="fa-solid fa-lock toggle_password" onclick="togglePasswordVisibility(this)"></i>
+                        </div>
                     </div>
-
-                    <div>
-                        <label for="Upassword">Password</label>
-                        <input required type="password" class="input_field" placeholder="Password" id="Upassword"/>
-                        <i class="fa-solid fa-lock toggle_password" onclick="togglePasswordVisibility(this)"></i>
-                        <label class="required">Required</label>
-                    </div>
-                </div> 
-                <br>
+              
                 <div class="button"> 
-                    <button type="submit" class="btn">Create account</button>  
+                    <button id = "register-btn" type="submit" class="btn">Create account</button>  
                 </div>
                 <p id="error-message" style="color: red;"></p>
-            </form>
-
-            <div class="under_text">
-                Already have an account?
-                <a href="loginpage2.html" style="color: #001F3F; text-decoration: underline;"> Sign in</a>
-            </div>
-        </center>
-    </div>
-
-    <!-- Footer section -->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="footer-container">
-                        © 2024 Parcs.
-                    </div>
+                <div class="under_text">
+                    Already have an account?
+                    <a id = "signInText" href="loginpage2.html" style="color: #001F3F; text-decoration: underline;"> Sign in</a>
                 </div>
-            </div>
-        </div>
-    </div>
+            </form>
+            
+        </center>
 
+  
+</div>
 </body>
 </html>

@@ -515,10 +515,10 @@ a:active {
       padding: 8px 16px;
   }
 }
+
 body{
     overflow-x:hidden;
   }
-
 
 .sidenav {
   height: 100%;
@@ -545,6 +545,18 @@ body{
 /* Change the color of the links on hover */
 .sidenav a:hover {
   color: #f1f1f1;
+}
+
+#loginform{
+  max-width: 60%;
+  max-height: 60%;
+  margin: 40 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fcfcfc;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 
+              0 6px 6px rgba(0, 0, 0, 0.10);
+  align-items: center;
 }
 
 .main {

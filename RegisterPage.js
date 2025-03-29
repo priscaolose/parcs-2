@@ -33,35 +33,8 @@ function toggleNavigation() {
         icon.classList.add("fa-lock");
     }
   }
-  /*
-  const form = document.querySelector("#signup-form");
-  const ufname = document.getElementById("uFirstname");
-  const uLname = document.getElementById("uLname");
-  const uemail = document.getElementById("uemail");
-  const upassowrd = document.getElementById("upassword");
-  const para = document.querySelector("p");
-  console.log("Users name is",ufname);
-    if(form!=null){
-        console.log("form is not empty");
-    }
-    else{
-        console.log("form is empty");
-    }
-
-  form.addEventListener("submit", (e) => {
-    console.log("it got in here")
-    if (uname.value === "" || upassowrd.value === ""||ufname==""||upassowrd=="") {
-      e.preventDefault();
-      para.textContent = "You need to fill out all the required fields";
-    }
-    else {
-        window.location.href = "ParksViewPage.html";
-    }   
-
-  });
-  */
+ 
   document.addEventListener("DOMContentLoaded", function() {
-    // Your JavaScript code goes here
 
     const form = document.querySelector("#registerform");
     const uFname = document.getElementById("UFname");
@@ -103,7 +76,7 @@ function toggleNavigation() {
 
         else{
           console.log("content loaded successfully");
-          errorMessage.textContent = ""; // Clear any previous error messages
+          errorMessage.textContent = ""; 
           window.location.href = "dentonList.html";
         }
     });

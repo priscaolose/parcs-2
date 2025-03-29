@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (!firstName || !lastName || !email || !password) {
             errorMessage.textContent = "Please fill out all fields.";
+            console.log(errorMessage.textContent);
             return;
         }
 
