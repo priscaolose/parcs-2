@@ -107,10 +107,17 @@
 }
 
 /* Header Styles */
-.header {
-  background-color: white;
-  padding: 20px 50px 0 20px; 
-  
+  .header {
+    background-color: #ffffff;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1010; /* Increased z-index */
+    width: 100%;
+    padding: 20px 50px 0 20px; 
 }
 .rock-3d-regular {
   font-family: "Rock 3D", system-ui;
@@ -860,16 +867,15 @@ input:checked + .slider:before {
   position: relative;
 }
 
-.park-container {
+/* .park-container {
   position: absolute;
   right: 0;
-  
   max-width: 300px;
   padding: 16px;
   background-color: white;
-}
+} */
 
-.park-container h3{
+/* .park-container h3{
   text-align: center;
   color:#001F3F;
   font-family: "Montserrat", sans-serif;
@@ -881,7 +887,7 @@ input:checked + .slider:before {
   font-family: "Montserrat", sans-serif;
   color:#001F3F;
   font-weight:400;
-}
+} */
 
 .hours, .Directions, .events, .Ratings {
   padding: 10px;
@@ -1224,15 +1230,18 @@ margin: 10px 0px 0px 0px;}
 }
 
 * Gallery Styles */
-.map-container {
+.park-container {
     padding: 20px;
 }
 
 .container-fluid {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 15px;
 }
 
 .gallery {
@@ -1276,8 +1285,54 @@ margin: 10px 0px 0px 0px;}
 }
 
 /* Grid Layout for Parks */
-.map-container {
+.park-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
+}
+
+
+
+/* Fix for the map container width */
+#map {
+  flex: 1;
+  height: calc(100vh - 120px); /* Adjust for header + footer */
+  width: 100%;
+  position: relative;
+  z-index: 1; 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .nav-menu {
+    margin: 0px;
+  }
+  
+  .nav-menu li {
+    margin-left: 10px;
+  }
+  
+  #map {
+    height: calc(100vh - 120px);
+    flex: 1;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo a span {
+    font-size: 1.2rem;
+  }
+  
+  .nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
