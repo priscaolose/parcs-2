@@ -1,78 +1,73 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <script src="https://kit.fontawesome.com/a3303f42a6.js" crossorigin="anonymous"></script> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>North Lakes Park</title>
+    <title>Eureka Park</title>
     <meta charset="UTF-8">
     <meta name="vxiewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <script src="loginpage.js"></script>
 </head>
+
 <body>
-    <div class="container-fluid">
-        <!-- Header section -->
-        <div class="row header">
-            <div class="col">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/ParcsLogo.png" alt="Parcs Logo" height="30px" width="30px" style="margin-bottom: 10px;">
-                        <span style="font-weight: 500;">parcs</span>
-                    </a>
-                </div>
-            </div>
-            <div class="col navbar-wrapper">
-                <nav class="navbar">
-                    <ul class="nav-menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="About.html">About</a></li>
-                        <li><a href="dentonInteractive.html">Viewparks</a></li>
-                        <li><a href="index.html">Logout</a></li>
-                    </ul>
-                </nav>
-            </div>
+   <div class="container-fluid">
+    <!-- Header section -->
+  <div class="row header">
+    <div class="col">
+        <div class="logo">
+            <a href="index.html">
+                <img src="../images/ParcsLogo.png" alt="Parcs Logo" height="30px" width="30px">
+            </a>
         </div>
     </div>
-        <!-- Body content section -->
-        <div class="nlp">
-            <div class="park-container">
-                <h3>North Lakes Park</h3>
-                <p>North Lakes Park in Denton, TX, is a serene retreat with lakes, trails, and recreational amenities, perfect for families and outdoor enthusiasts seeking leisure and active fun in the heart of nature.</p>
-                <div class="container-section">
-                    <div class="hours">
-                        <p id="time">8am - 10pm</p>
-                        <p>Park hours</p>
-                    </div>
-                    <div class="Directions">
-                        <a href="https://maps.app.goo.gl/FYKDPyQyQoxVmPHv5">Get Directions
-                            <img width="30" height="30" src="/images/park.mp4"/>
-                        </a>
-                    </div>
-                    <div class="events">
-                        <a href="#">Park Events</a>
-                    </div>
-                    <div class="Ratings">
-                        <p>Park Ratings</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <nav class="navbar">
+      <ul class="nav-menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <!-- <li><a href="loginpage2.html">Login</a></li> -->
+          <li><a href="../dentonList.html">Denton Parks</a></li>
+          <li><a href="../ManageAccount.html">Manage Account</a></li>
+          <!-- <li><a href="LeaderBoard.html">Leaderboard</a></li> -->
+          <!-- <li><a href="LeaveReviews.html">Leave Reviews</a></li> -->
+          <li><a href="#">Logout</a></li>
+      </ul>
+  </nav>
+  </div>
+    
+  <div class="eureka">
+    <div class="park-container">
+        <h2>North Lakes Park</h2>
+        <p>North Lakes Park in Denton, TX, is a serene retreat with lakes, trails, and recreational amenities, perfect for families and outdoor enthusiasts seeking leisure and active fun in the heart of nature.</p>
+        <img src="../images/North_Lakes_Park.jpeg" alt="Eureka Park" class="park-image">
     </div>
+    <div class="container-section">
+      <div class="hours">
+        <p id="park-hours"><strong>Park Hours:</strong> 8am - 10pm</p>
+      </div>
+      <div class="directions">
+        <a href="https://maps.app.goo.gl/BUuVazNWymGVvbRf6" class="direction-link">
+          Get Directions
+          <img width="30" height="30" src="../images/parkIcon.png" alt="Map icon"/>
+        </a>
+      </div>
+      <div class="events">
+        <a href="#upcoming-events" class="events-link">Park Events</a>
+      </div>
+      <div class="ratings">
+        <p><strong>Park Ratings</strong></p>
+        <!-- Consider adding actual rating elements here -->
+      </div>
+    </div>
+  </div>
+</div>
+
     <!-- Footer section -->
     <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="footer-container">
-                        © 2024 Parcs.
-                    </div>
-                </div>
-            </div>
-        </div>
+        &copy; Parcs 2025 | All Rights Reserved
     </div>
 </body>
+<script src="script.js"></script>
 </html>

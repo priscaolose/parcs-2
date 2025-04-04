@@ -867,53 +867,97 @@ input:checked + .slider:before {
   position: relative;
 }
 
-/* .park-container {
-  position: absolute;
-  right: 0;
-  max-width: 300px;
-  padding: 16px;
-  background-color: white;
-} */
-
-/* .park-container h3{
-  text-align: center;
-  color:#001F3F;
-  font-family: "Montserrat", sans-serif;
+.park-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  padding-top: 20px;
+  margin: 0 auto; /* Center the container */
+  width: 100%; /* Full width */
+  height: 100vh; /* Adjust height as needed */
 }
 
-.park-container p{
-  padding-top:10px ;
-  font-size: 14px;
-  font-family: "Montserrat", sans-serif;
-  color:#001F3F;
-  font-weight:400;
+.park-container h2 {
+  color: #2c6e49;
+  margin-top: 0;
+  font-size: 28px;
+}
+
+.park-container p {
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 0;
+}
+
+.park-container img{
+  width: 100%;
+}
+
+/* .Directions, .events, .Ratings {
+  padding: 10px;
+  text-align: right;
+  font-size: 15px;
 } */
 
-.hours, .Directions, .events, .Ratings {
-  padding: 10px;
-  text-align: center;
-  font-size: 15px;
+.hours p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Links styling */
+.container-section a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #3a86ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
 }
 
 .container-section {
-  padding-top: 10px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Create two columns */
-  gap: 20px; /* Add gap between columns */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
 }
 
-.container-section a{
-  padding-top:10px ;
-  font-size: 12px;
-  font-family: "Montserrat", sans-serif;
-  color:#001F3F;
+.container-section > div {
+  flex: 1 1 200px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
+
+.container-section > div:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 
 .container-section p{
   padding-top:10px ;
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
   color:#001F3F;
+}
+
+.container-section a:hover {
+  color: #1a56cc;
+  text-decoration: underline;
+}
+
+.container-section img {
+  border-radius: 4px;
+  object-fit: contain;
+}
+
+/* Ratings */
+.ratings p {
+  margin: 0;
+  font-size: 16px;
 }
 
 #time{
@@ -924,12 +968,19 @@ input:checked + .slider:before {
 }
 
 .eureka{
-  background-image: url("images/Eureka-park.jpeg");
-  min-height: 380px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+  font-family: 'Open Sans', Arial, sans-serif;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: relative;
+  width: 100%;
+  padding: 20px 50px 0 20px; 
+
 }
 .lake-forest{
   background-image: url("images/lakeForest_park.jpeg");
@@ -1231,7 +1282,9 @@ margin: 10px 0px 0px 0px;}
 
 * Gallery Styles */
 .park-container {
-    padding: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 20px;
 }
 
 .container-fluid {
@@ -1334,5 +1387,17 @@ margin: 10px 0px 0px 0px;}
   .nav-menu {
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container-section {
+    flex-direction: column;
+  }
+  
+  .container-section > div {
+    flex: 1 1 100%;
   }
 }

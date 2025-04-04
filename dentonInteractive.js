@@ -30,7 +30,7 @@ const WheelerRidgePmarker = L.marker([33.1547, -97.0975], {icon: parkIcon}).addT
 //Ad// Park 1 - Eureka Park
 let park1 = `
 <div style="text-align:center">
-    <a href="eureka.html">
+    <a href="../park_files/eureka.html">
         <img src="images/Eureka_Park.jpeg" alt="Eureka Park" width="100%" height="100">
     </a>
     <h4>Eureka Park</h4>
@@ -47,7 +47,7 @@ let park1 = `
 // Park 2 - North Lakes Park
 let park2 = `
 <div style="text-align:center">
-    <a href="nlp.html">
+    <a href="../park_files/nlp.html">
         <img width="100%" height="100" src="images/North_Lakes_Park.jpeg"/>
     </a>
     <h4>North Lakes Park</h4>
@@ -64,7 +64,7 @@ let park2 = `
 // Park 3 - Lake Forest Park
 let park3 = `
 <div style="text-align:center">
-    <a href="lakeForest.html">
+    <a href="../park_files/lakeForest.html">
         <img width="100%" height="100" src="images/lakeForest_park.jpeg"/>
     </a>
     <h4>Lake Forest Park</h4>
@@ -81,7 +81,7 @@ let park3 = `
 // Park 4 - Mckenna Park
 let park4 = `
 <div style="text-align:center">
-    <a href="mckenna.html">
+    <a href="../park_files/mckenna.html">
         <img width="100%" height="100" src="images/mckennaPark.jpeg"/>
     </a>
     <h4>Mckenna Park</h4>
@@ -98,7 +98,7 @@ let park4 = `
 // Park 5 - Wheeler Ridge Park
 let park5 = `
 <div style="text-align:center">
-    <a href="wheeler.html">
+    <a href="../park_files/wheeler.html">
         <img width="100%" height="100" src="images/Wheeler-ridge-park.jpeg"/>
     </a>
     <h4>Wheeler Ridge Park</h4>
