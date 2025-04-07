@@ -1,0 +1,113 @@
+#registerform{
+    max-width: 60%;
+    max-height: 60%;
+    margin: 10 auto;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #fcfcfc;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 
+                0 6px 6px rgba(0, 0, 0, 0.10);
+    align-items: center;
+    margin: 20px auto 0;
+}
+.header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    background-color: #fff;
+}
+
+#page_heading{
+    color: #4E901E;
+    font-size: 50px;
+    position: relative/absolute; 
+    text-align: center;
+}
+.inputField{
+    position: relative;
+    margin-bottom: 20px;
+}
+.input_field{
+    padding: 15px 5px; 
+    border: 1px solid #4E901E; 
+    font-size: 20px;
+    border-radius: 10px; 
+    margin: 10px;
+    margin-left: 27px;
+    width: 300px;   
+    opacity: 0.8;
+}
+.signin-prompt {
+    font-size: 25px; 
+    color:#001F3F;
+    margin-bottom: 20px; 
+    font-weight: 500; 
+}
+.under_text{
+  padding-top: 10px;
+  color: rgb(0, 31, 63);
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4E901E;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    align-items: center;
+    height: auto;
+    width: 300px;
+    text-align: center;
+  }
+
+  .logo {
+    display: flex;
+    padding-bottom: 5px;
+  }
+  
+  .logo img {
+    max-height: 50px;
+  }
+  
+  .logo span {
+    font-size: 32px;
+    font-family: "Bebas Neue", sans-serif;
+    color: #001F3F;
+  }
+  .nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: auto; 
+  }
+  
+  .nav-menu li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  .nav-menu li a {
+    text-decoration: none;
+    color: #001F3F;
+  }
+  
+  .nav-menu li a .avatar-link{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('images/avatar.png');
+    background-size: cover; /* Adjust background size */
+  
+  }
+  .footer {
+    background-color: rgb(250, 249, 248);
+    color: lightgrey;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
