@@ -4,50 +4,67 @@
     <meta charset="UTF-8">
     <title>Parks in Denton, TX - Interactive View</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    
+
 </head>
 <body>
     <div class="container-fluid">
         <!-- Header section -->
-      <div class="row header">
-        <div class="col">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/ParcsLogo.png" alt="Parcs Logo" height="30px" width="30px">
-                </a>
-            </div>
-        </div>
-        <nav class="navbar">
-          <ul class="nav-menu">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <!-- <li><a href="loginpage2.html">Login</a></li> -->
-              <li><a href="dentonList.html">Denton Parks</a></li>
-              <li><a href="ManageAccount.html">Manage Account</a></li>
-              <!-- <li><a href="LeaderBoard.html">Leaderboard</a></li> -->
-              <!-- <li><a href="LeaveReviews.html">Leave Reviews</a></li> -->
-              <li><a href="#">Logout</a></li>
-          </ul>
-      </nav>
-
-    <div id="map" style="flex: 1; height: calc(100vh - 90px);  bottom: 50px; width: 150%; right: 20px; "></div>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="dentonInteractive.js"></script>
-
-      </div>
-        <!-- Footer section -->
-        <div class="footer" style="z-index: 999;">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="footer-container">
-                            <p>© 2024 Parcs.</p>
-                        </div>
-                    </div>
+        <div class="header">
+            <div class="col">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/ParcsLogo.png" alt="Parcs Logo" height="30px" width="30px" style="margin-bottom: 10px;">
+                        <span style="font-weight: 500;">parcs</span>
+                    </a>
                 </div>
             </div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="loginpage2.html">Login</a></li> -->
+                    <li><a href="dentonList.html">Denton Parks</a></li>
+                    <li><a href="ManageAccount.html">Manage Account</a></li>
+                    <!-- <li><a href="LeaderBoard.html">Leaderboard</a></li> -->
+                    <!-- <li><a href="LeaveReviews.html">Leave Reviews</a></li> -->
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
         </div>
+
+        <!-- <div id="parks-display">
+            <h2>View Parks</h2> 
+        </div> -->
+    
+        <div class="switch-container">
+          <button id="toggleButton" onclick="window.location.href='dentonList.html'">
+            <span class="toggle-text">List View
+                <img src="/images/paper.png" alt="image of a list like a list of items" />
+            </span>
+        </button>
+            <span id="pageIndicator"></span>
+        </div>
+
+        <!-- Map Container -->
+        <div id="map"></div>
+       
+    </div>
+ <div></div>
+    <!-- Footer section -->
+    <div class="footer">
+        <p>&copy; 2025 Parcs. All Rights Reserved.</p>
+    </div>
+    
+    <!-- Leaflet JavaScript (NO integrity attribute) -->
+    <!-- <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script> -->
+
+    <!-- Custom JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- <script src="dentonInteractive.js"></script> -->
+    <script src="dentonInteractive.js"></script>
 </body>
 </html>

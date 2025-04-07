@@ -12,8 +12,8 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 
 //creating park icon for marker
 const parkIcon = L.icon({
-    iconUrl: 'pin.png',
-    iconSize:     [30, 50], // size of the icon
+    iconUrl: 'images/pin.png',
+    iconSize:     [35, 40], // size of the icon
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
@@ -30,7 +30,7 @@ const WheelerRidgePmarker = L.marker([33.1547, -97.0975], {icon: parkIcon}).addT
 //Ad// Park 1 - Eureka Park
 let park1 = `
 <div style="text-align:center">
-    <a href="eureka.html">
+    <a href="../park_files/eureka.html">
         <img src="images/Eureka_Park.jpeg" alt="Eureka Park" width="100%" height="100">
     </a>
     <h4>Eureka Park</h4>
@@ -40,14 +40,14 @@ let park1 = `
     <p style="background-color: white; border-radius: 50px; margin = 100px; font-weight:bold;">Ramps: Yes</p>
     <p style="background-color: white; border-radius: 50px; margin = 100px; font-weight:bold;">Bathrooms: Yes</p>
     </p>
-    <a href="eureka.html">Learn more</a>
+    <a href="park_files/eureka.html">Learn more</a>
 </div>
 `
 
 // Park 2 - North Lakes Park
 let park2 = `
 <div style="text-align:center">
-    <a href="nlp.html">
+    <a href="../park_files/nlp.html">
         <img width="100%" height="100" src="images/North_Lakes_Park.jpeg"/>
     </a>
     <h4>North Lakes Park</h4>
@@ -64,7 +64,7 @@ let park2 = `
 // Park 3 - Lake Forest Park
 let park3 = `
 <div style="text-align:center">
-    <a href="lakeForest.html">
+    <a href="../park_files/lakeForest.html">
         <img width="100%" height="100" src="images/lakeForest_park.jpeg"/>
     </a>
     <h4>Lake Forest Park</h4>
@@ -81,7 +81,7 @@ let park3 = `
 // Park 4 - Mckenna Park
 let park4 = `
 <div style="text-align:center">
-    <a href="mckenna.html">
+    <a href="../park_files/mckenna.html">
         <img width="100%" height="100" src="images/mckennaPark.jpeg"/>
     </a>
     <h4>Mckenna Park</h4>
@@ -98,7 +98,7 @@ let park4 = `
 // Park 5 - Wheeler Ridge Park
 let park5 = `
 <div style="text-align:center">
-    <a href="wheeler.html">
+    <a href="../park_files/wheeler.html">
         <img width="100%" height="100" src="images/Wheeler-ridge-park.jpeg"/>
     </a>
     <h4>Wheeler Ridge Park</h4>
@@ -111,53 +111,23 @@ let park5 = `
     <a href="wheeler.html">Learn more</a>
 </div>
 `
+const parks = [
+    {marker: EurekaPmarker, content: park1},
+    {marker: NorthLakesPmarker, content: park2},
+    {marker: LakeForestPmarker, content: park3},
+    {marker: MckennaParkmarker, content: park4},
+    {marker: WheelerRidgePmarker, content: park5}
+];
 
+parks.forEach(park => {
+    park.marker.bindPopup(park.content);
+    park.marker.on('mouse-over', function(e){
+        this.openPopup();
+    });
 
-EurekaPmarker.bindPopup(park1);
-NorthLakesPmarker.bindPopup(park2);
-LakeForestPmarker.bindPopup(park3);
-MckennaParkmarker.bindPopup(park4);
-WheelerRidgePmarker.bindPopup(park5);
-
-
-// Add event listeners to show popups on mouseover
-EurekaPmarker.on('mouseover', function(e){
-    this.openPopup();
-});
-NorthLakesPmarker.on('mouseover', function(e){
-    this.openPopup();
-});
-LakeForestPmarker.on('mouseover', function(e){
-    this.openPopup();
-});
-MckennaParkmarker.on('mouseover', function(e){
-    this.openPopup();
-});
-WheelerRidgePmarker.on('mouseover', function(e){
-    this.openPopup();
 });
 
-var popup1 = L.popup({
-    maxWidth: 650, // Adjust maxWidth as needed
-    maxHeight: 100 // Adjust maxHeight as needed
-  }).setContent(park1);
+// Define popups dynamically with consistent size
+const maxPopupSize = { maxWidth: 300, maxHeight: 200 };
 
-  var popup2 = L.popup({
-    maxWidth: 300, // Adjust maxWidth as needed
-    maxHeight: 200 // Adjust maxHeight as needed
-  }).setContent(park2);
-
-  var popup3 = L.popup({
-    maxWidth: 300, // Adjust maxWidth as needed
-    maxHeight: 200 // Adjust maxHeight as needed
-  }).setContent(park3);
-
-  var popup4 = L.popup({
-    maxWidth: 300, // Adjust maxWidth as needed
-    maxHeight: 200 // Adjust maxHeight as needed
-  }).setContent(park4);
-
-  var popup5 = L.popup({
-    maxWidth: 300, // Adjust maxWidth as needed
-    maxHeight: 200 // Adjust maxHeight as needed
-  }).setContent(park5);
+const popups = parks.map(park => L.popup(maxPopupSize).setContent(park.content));
