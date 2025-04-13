@@ -24,7 +24,6 @@
 }
 .inputField{
     position: relative;
-    margin-bottom: 20px;
 }
 .input_field{
     padding: 15px 5px; 
@@ -60,6 +59,8 @@
     height: auto;
     width: 300px;
     text-align: center;
+    margin-top: 20px;
+
   }
 
   .logo {
@@ -111,3 +112,11 @@
     bottom: 0;
     width: 100%;
   }
+
+  label {
+    width: 100px; 
+    font-weight: bold;
+    color: #4E901E;
+  
+  }
+  

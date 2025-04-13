@@ -34,6 +34,15 @@ body {
     position: relative;
     margin-bottom: 20px;
 }
+.inputFields{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  text-align: center; 
+
+}
+
 .input_field{
     padding: 15px 5px; 
     border: 1px solid #4E901E; 
@@ -43,6 +52,7 @@ body {
     margin-left: 27px;
     width: 300px;   
     opacity: 0.8;
+    align-items: center;
 }
 .signin-prompt {
     font-size: 25px; 
@@ -111,11 +121,20 @@ body {
   }
   .footer {
     background-color: rgb(250, 249, 248);
-    color: lightgrey;
+    color: rgba(211, 211, 211, 0.832);
     padding: 20px 0;
     text-align: center;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for elevation */
   }
+
+
+label {
+  width: 100px; 
+  font-weight: bold;
+  color: #4E901E;
+
+}

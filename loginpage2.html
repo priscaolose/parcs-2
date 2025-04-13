@@ -42,47 +42,52 @@
             <div class="signin-prompt">
                 Sign in with your E-mail Address
             </div>
-            <div class = "inputField">
-                <div class="input-container">
-                    <input type="email" class="input_field" placeholder="Email" id="email">
-                    <i class="fa-regular fa-user"></i>
+            <div class="inputFields">
+                <div class = "inputField">
+                    <label for="email">Email:</label>
+
+                    <div class="input-container">
+                        <input type="email" class="input_field" placeholder="Email" id="email">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
                 </div>
             </div>
-            <div  class = "inputField">
-                <div class="input-container">
-                    <input  type="password" class="input_field" placeholder="Password" id="password" />
-                    <i class="fa-solid fa-lock toggle_password" onclick="togglePasswordVisibility(this)"></i>
+            <div class="inputFields">
+                <div  class = "inputField">
+                    <label for="email">Password:</label>
+
+                    <div class="input-container">
+                        <input  type="password" class="input_field" placeholder="Password" id="password" />
+                        <i class="fa-solid fa-lock toggle_password" onclick="togglePasswordVisibility(this)"></i>
+                    </div>
                 </div>
             </div>
 
-            <div class="button">
-                <button id = "login-btn" type="submit" class="btn">Log in</button>
-            </div>
-            <p id="error-message" style="color: red;"></p>
-            <div class="under_text">
-                <input type="checkbox" id="check">
-                <label for="check" style='color: #001F3F;'>Remember me</label>
-                <br>
-                <span style='color: #001F3F'>
-                    Do not have an account?
-                    <a href="RegisterPage.html" style="color: #001F3F; text-decoration: underline;"> Create one</a>
-                </span>
+            <div class="inputFields">
+                <div class="button">
+                    <button id = "login-btn" type="submit" class="btn">Log in</button>
+                </div>
+                <p id="error-message" style="color: red;"></p>
+                <div class="under_text">
+                                
+                    <span style='color: #001F3F'>
+                        Do not have an account?
+                        <a href="RegisterPage.html" style="color: #001F3F; text-decoration: underline;"> Create one</a>
+                    </span>
+                </div>
             </div>
         </form>        
     </center>
+</div>
+</body>
 
-
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="footer-container">
-                        © 2024 Parcs.
-                    </div>
-                </div>
+<div class="footer">
+    <div class="container">
+        <div class="footer-container">
+            <div style ="color: black">
+                © 2024 Parcs.
             </div>
         </div>
     </div>
 </div>
-</body>
 </html>
